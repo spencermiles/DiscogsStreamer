@@ -34,7 +34,7 @@
 		093AE47824B15A2C00B126E2 /* Fixtures in Resources */ = {isa = PBXBuildFile; fileRef = 093AE47724B15A2B00B126E2 /* Fixtures */; };
 		093AE47D24B2398600B126E2 /* Release.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE47C24B2398600B126E2 /* Release.swift */; };
 		093AE48024B23AF300B126E2 /* BrowserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE47F24B23AF300B126E2 /* BrowserDataSource.swift */; };
-		093AE48224B23B7500B126E2 /* Browsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE48124B23B7500B126E2 /* Browsable.swift */; };
+		093AE48224B23B7500B126E2 /* Browseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE48124B23B7500B126E2 /* Browseable.swift */; };
 		093AE48624B24C9800B126E2 /* ReleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE48524B24C9800B126E2 /* ReleaseTests.swift */; };
 		09F1CBC924B263FF007B676A /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBC824B263FF007B676A /* Artist.swift */; };
 		09F1CBCB24B26447007B676A /* RecordLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBCA24B26447007B676A /* RecordLabel.swift */; };
@@ -91,7 +91,7 @@
 		093AE47724B15A2B00B126E2 /* Fixtures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fixtures; sourceTree = "<group>"; };
 		093AE47C24B2398600B126E2 /* Release.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Release.swift; sourceTree = "<group>"; };
 		093AE47F24B23AF300B126E2 /* BrowserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserDataSource.swift; sourceTree = "<group>"; };
-		093AE48124B23B7500B126E2 /* Browsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browsable.swift; sourceTree = "<group>"; };
+		093AE48124B23B7500B126E2 /* Browseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browseable.swift; sourceTree = "<group>"; };
 		093AE48524B24C9800B126E2 /* ReleaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseTests.swift; sourceTree = "<group>"; };
 		09F1CBC824B263FF007B676A /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		09F1CBCA24B26447007B676A /* RecordLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLabel.swift; sourceTree = "<group>"; };
@@ -214,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				09F1CBC824B263FF007B676A /* Artist.swift */,
-				093AE48124B23B7500B126E2 /* Browsable.swift */,
+				093AE48124B23B7500B126E2 /* Browseable.swift */,
 				093AE44724B11C1C00B126E2 /* Folder.swift */,
 				09F1CBCA24B26447007B676A /* RecordLabel.swift */,
 				093AE47C24B2398600B126E2 /* Release.swift */,
@@ -444,7 +444,7 @@
 				093AE46124B13E4D00B126E2 /* DiscogsClient.swift in Sources */,
 				093AE41324B1190900B126E2 /* AppDelegate.swift in Sources */,
 				093AE46324B1415400B126E2 /* Environment.swift in Sources */,
-				093AE48224B23B7500B126E2 /* Browsable.swift in Sources */,
+				093AE48224B23B7500B126E2 /* Browseable.swift in Sources */,
 				093AE46624B1476400B126E2 /* URLSessionDataTaskPublisher+Extensions.swift in Sources */,
 				093AE45A24B12E7D00B126E2 /* BaseViewController.swift in Sources */,
 				09F1CBC924B263FF007B676A /* Artist.swift in Sources */,

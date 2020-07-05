@@ -27,6 +27,8 @@ struct ReleasesResponse {
 }
 
 protocol DiscogsService {
+    typealias ItemsResponse = [Browseable]
+    
     func userFolders(for request: UserFoldersRequest) -> AnyPublisher<FoldersResponse, Error>
     func userReleases(for request: UserReleasesRequest) -> AnyPublisher<ReleasesResponse, Error>
 }

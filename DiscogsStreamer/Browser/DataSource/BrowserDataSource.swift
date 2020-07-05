@@ -6,6 +6,7 @@
 //  Copyright © 2020 Spencer Miles. All rights reserved.
 //
 
+import Combine
 import Foundation
 
 class BrowserDataSource {
@@ -15,5 +16,11 @@ class BrowserDataSource {
         var isReloading: Bool = false
         var canLoadMore: Bool = false
         var didFail: Bool = false
+    }
+    
+    fileprivate enum State {
+        case ready
+        case loading(AnyCancellable)
+//        case loaded([DiscogsService.])
     }
 }

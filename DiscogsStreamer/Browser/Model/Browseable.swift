@@ -1,5 +1,5 @@
 //
-//  Browsable.swift
+//  Browseable.swift
 //  DiscogsStreamer
 //
 //  Created by Spencer on 7/5/20.
