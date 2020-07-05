@@ -82,8 +82,11 @@ class DiscogsClientTests: XCTestCase {
         
         XCTAssertEqual(response?.releases.count, 50)
         XCTAssertEqual(response?.releases.first?.displayName, "E.R.P. / Duplex - Fr-Dpx")
-        XCTAssertEqual(response?.releases.first?.secondaryDisplayName, "")
+        XCTAssertEqual(response?.releases.first?.secondaryDisplayName, nil)
+        
         XCTAssertEqual(response?.releases[1].displayName, "Minor Science - Second Language")
+        XCTAssertEqual(response?.releases[1].secondaryDisplayName, "Whities (2019)")
+
         XCTAssertEqual(response?.releases[2].displayName, "Indigo Tracks - Rites And Rituals")
     }
 }

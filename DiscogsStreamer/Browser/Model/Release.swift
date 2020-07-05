@@ -18,7 +18,11 @@ struct Release: Browseable {
     }
     var secondaryDisplayName: String? {
         get {
-            return self.recordLabels.first?.name
+            guard let labelName = self.recordLabels.first?.name else {
+                return nil
+            }
+            
+            return (year != nil) ? "\(labelName) (\(year))" : labelName
         }
     }
     let resourceURL: URL?
@@ -26,18 +30,21 @@ struct Release: Browseable {
     let artists: [Artist]
     let recordLabels: [RecordLabel]
     let title: String
+    let year: Int8?
     
     init(id: ID,
          resourceURL: URL? = nil,
          artists: [Artist] = [],
          recordLabels: [RecordLabel] = [],
-         title: String)
+         title: String,
+         year: UInt?)
     {
         self.id = id
         self.resourceURL = resourceURL
         self.artists = artists
         self.recordLabels = recordLabels
         self.title = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        self.year = year
     }
 }
 
