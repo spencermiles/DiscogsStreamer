@@ -22,7 +22,7 @@ jobs:
     - name: Test
       uses: sersoft-gmbh/xcodebuild-action@v1.1
       with:
-        workspace: DiscogsStreamer.xcworkspace
+        project: DiscogsStreamer.xcodeproj
         scheme: DiscogsStreamer
         destination: platform=iOS Simulator
         action: test
