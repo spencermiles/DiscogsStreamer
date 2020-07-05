@@ -12,8 +12,8 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+    - uses: actions/checkout@master
+    - name: Start xcodebuild test
+      run: xcodebuild clean test -project DiscogsStreamer.xcodeproj -scheme DiscogsStreamer -destination "platform=iOS Simulator,name=iPhone 11 Pro"
+    # - name: Run tests
+    #   run: swift test -v
