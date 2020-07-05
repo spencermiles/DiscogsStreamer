@@ -110,7 +110,7 @@ private struct RawRelease: Decodable {
         var masterUrl: String?
         var resourceUrl: String
         var title: String
-        var year: Int
+        var year: UInt
     }
     
     
@@ -143,7 +143,8 @@ private extension Release {
             resourceURL: URL(string: release.basicInformation.resourceUrl),
             artists: release.basicInformation.artists.compactMap({ Artist($0) }),
             recordLabels: release.basicInformation.labels.compactMap({ RecordLabel($0) }),
-            title: release.basicInformation.title)
+            title: release.basicInformation.title,
+            year: release.basicInformation.year)
     }
 }
 

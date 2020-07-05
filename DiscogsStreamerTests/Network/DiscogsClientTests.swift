@@ -85,7 +85,7 @@ class DiscogsClientTests: XCTestCase {
         XCTAssertEqual(response?.releases.first?.secondaryDisplayName, nil)
         
         XCTAssertEqual(response?.releases[1].displayName, "Minor Science - Second Language")
-        XCTAssertEqual(response?.releases[1].secondaryDisplayName, "Whities (2019)")
+        XCTAssertEqual(response?.releases[1].secondaryDisplayName, "Whities (2020)")
 
         XCTAssertEqual(response?.releases[2].displayName, "Indigo Tracks - Rites And Rituals")
     }

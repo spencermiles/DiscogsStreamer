@@ -22,7 +22,7 @@ struct Release: Browseable {
                 return nil
             }
             
-            return (year != nil) ? "\(labelName) (\(year))" : labelName
+            return (year != nil) ? "\(labelName) (\(year!))" : labelName
         }
     }
     let resourceURL: URL?
@@ -30,7 +30,7 @@ struct Release: Browseable {
     let artists: [Artist]
     let recordLabels: [RecordLabel]
     let title: String
-    let year: Int8?
+    let year: UInt?
     
     init(id: ID,
          resourceURL: URL? = nil,
