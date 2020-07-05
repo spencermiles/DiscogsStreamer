@@ -71,10 +71,10 @@ private struct RawFoldersResponse: Decodable {
 }
 
 private struct RawFolder: Decodable {
-    var count: Int
-    var id: Int
-    var name: String
-    var resourceUrl: String
+    let count: Int
+    let id: Int
+    let name: String
+    let resourceUrl: String
 }
 
 private extension FoldersResponse {
@@ -95,32 +95,53 @@ private extension Folder {
     }
 }
 
+// MARK: Pagination
+
+private struct RawPagination: Decodable {
+    let page: UInt
+    let pages: UInt
+    let perPage: UInt
+    let items: UInt
+}
+
+private extension Pagination {
+    init(_ pagination: RawPagination) {
+        self.init(
+            page: pagination.page,
+            pages: pagination.pages,
+            perPage: pagination.perPage,
+            items: pagination.items)
+    }
+}
+
 // MARK: Releases
 
 private struct RawReleasesResponse: Decodable {
+    let pagination: RawPagination
     let releases: [RawRelease]
 }
 
 private struct RawRelease: Decodable {
     
     struct RawReleaseBasicInformation: Decodable {
-        var artists: [RawReleaseArtist]
-        var labels: [RawReleaseRecordLabel]
-        var masterId: Int
-        var masterUrl: String?
-        var resourceUrl: String
-        var title: String
-        var year: UInt
+        let artists: [RawReleaseArtist]
+        let labels: [RawReleaseRecordLabel]
+        let masterId: Int
+        let masterUrl: String?
+        let resourceUrl: String
+        let title: String
+        let year: UInt
     }
     
     
-    var id: Int
-    var basicInformation: RawReleaseBasicInformation
+    let id: Int
+    let basicInformation: RawReleaseBasicInformation
 }
 
 private extension ReleasesResponse {
     init(_ response: RawReleasesResponse) {
         self.init(
+            pagination: Pagination(response.pagination),
             releases: response.releases.compactMap { Release($0) }
         )
     }
@@ -128,16 +149,6 @@ private extension ReleasesResponse {
 
 private extension Release {
     init?(_ release: RawRelease) {
-//        let artistName = release
-//            .basicInformation
-//            .artists
-//            .compactMap({ $0.name })
-//            .joined(separator: " / ")
-//            .trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-//        let releaseTitle = release.basicInformation.title
-//            .trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-//        let displayName = "\(artistName) - \(releaseTitle)"
-
         self.init(
             id: release.id,
             resourceURL: URL(string: release.basicInformation.resourceUrl),
@@ -148,7 +159,7 @@ private extension Release {
     }
 }
 
-// MARK: - Artist
+// MARK: Artist
 
 private struct RawReleaseArtist: Decodable {
     var id: Int
@@ -170,7 +181,8 @@ private extension Artist {
             resourceURL: resourceURL)
     }
 }
-// MARK: - Record Label
+
+// MARK: Record Label
 
 struct RawReleaseRecordLabel: Decodable {
     var id: Int

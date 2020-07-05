@@ -80,6 +80,11 @@ class DiscogsClientTests: XCTestCase {
         
         let response = try result?.get()
         
+        XCTAssertEqual(response?.pagination.items, 1144)
+        XCTAssertEqual(response?.pagination.page, 1)
+        XCTAssertEqual(response?.pagination.perPage, 50)
+        XCTAssertEqual(response?.pagination.pages, 23)
+
         XCTAssertEqual(response?.releases.count, 50)
         XCTAssertEqual(response?.releases.first?.displayName, "E.R.P. / Duplex - Fr-Dpx")
         XCTAssertEqual(response?.releases.first?.secondaryDisplayName, nil)

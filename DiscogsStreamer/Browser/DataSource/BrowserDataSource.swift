@@ -21,6 +21,6 @@ class BrowserDataSource {
     fileprivate enum State {
         case ready
         case loading(AnyCancellable)
-//        case loaded([DiscogsService.])
+        case loaded([DiscogsService.ItemsResponse])
     }
 }

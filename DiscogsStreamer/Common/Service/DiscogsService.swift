@@ -23,6 +23,7 @@ struct FoldersResponse {
 }
 
 struct ReleasesResponse {
+    var pagination: Pagination
     var releases: [Release]
 }
 

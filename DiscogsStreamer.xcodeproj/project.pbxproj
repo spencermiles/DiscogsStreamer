@@ -38,6 +38,7 @@
 		093AE48624B24C9800B126E2 /* ReleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE48524B24C9800B126E2 /* ReleaseTests.swift */; };
 		09F1CBC924B263FF007B676A /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBC824B263FF007B676A /* Artist.swift */; };
 		09F1CBCB24B26447007B676A /* RecordLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBCA24B26447007B676A /* RecordLabel.swift */; };
+		09F1CBCD24B27CC8007B676A /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBCC24B27CC8007B676A /* Pagination.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		093AE48524B24C9800B126E2 /* ReleaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseTests.swift; sourceTree = "<group>"; };
 		09F1CBC824B263FF007B676A /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		09F1CBCA24B26447007B676A /* RecordLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLabel.swift; sourceTree = "<group>"; };
+		09F1CBCC24B27CC8007B676A /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				093AE44724B11C1C00B126E2 /* Folder.swift */,
 				09F1CBCA24B26447007B676A /* RecordLabel.swift */,
 				093AE47C24B2398600B126E2 /* Release.swift */,
+				09F1CBCC24B27CC8007B676A /* Pagination.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				093AE46124B13E4D00B126E2 /* DiscogsClient.swift in Sources */,
 				093AE41324B1190900B126E2 /* AppDelegate.swift in Sources */,
 				093AE46324B1415400B126E2 /* Environment.swift in Sources */,
+				09F1CBCD24B27CC8007B676A /* Pagination.swift in Sources */,
 				093AE48224B23B7500B126E2 /* Browseable.swift in Sources */,
 				093AE46624B1476400B126E2 /* URLSessionDataTaskPublisher+Extensions.swift in Sources */,
 				093AE45A24B12E7D00B126E2 /* BaseViewController.swift in Sources */,
