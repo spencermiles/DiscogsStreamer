@@ -13,7 +13,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: Start xcodebuild test
-      run: xcodebuild clean test -project DiscogsStreamer.xcodeproj -scheme DiscogsStreamer -destination "platform=iOS Simulator,name=iPhone 11 Pro"
-    # - name: Run tests
-    #   run: swift test -v
+    # - name: Build
+    #   uses: sersoft-gmbh/xcodebuild-action@v1.1
+    #   with:
+    #     workspace: DiscogsStreamer.xcworkspace
+    #     scheme: DiscogsStreamer
+    #     action: build
+    - name: Test
+      uses: sersoft-gmbh/xcodebuild-action@v1.1
+      with:
+        workspace: DiscogsStreamer.xcworkspace
+        scheme: DiscogsStreamer
+        destination: platform=iOS Simulator
+        action: test
+    # - name: Start xcodebuild test
+    #   run: xcodebuild clean test -project DiscogsStreamer.xcodeproj -scheme DiscogsStreamer -destination "platform=iOS Simulator,name=iPhone 11 Pro"
