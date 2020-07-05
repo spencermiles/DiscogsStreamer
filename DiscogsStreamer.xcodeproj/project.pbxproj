@@ -13,8 +13,31 @@
 		093AE41924B1190B00B126E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093AE41824B1190B00B126E2 /* Assets.xcassets */; };
 		093AE41C24B1190B00B126E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093AE41B24B1190B00B126E2 /* Preview Assets.xcassets */; };
 		093AE41F24B1190B00B126E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093AE41D24B1190B00B126E2 /* LaunchScreen.storyboard */; };
-		093AE42A24B1190B00B126E2 /* DiscogsStreamerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE42924B1190B00B126E2 /* DiscogsStreamerTests.swift */; };
 		093AE43524B1190B00B126E2 /* DiscogsStreamerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE43424B1190B00B126E2 /* DiscogsStreamerUITests.swift */; };
+		093AE44424B11A2500B126E2 /* DiscogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE44324B11A2500B126E2 /* DiscogsService.swift */; };
+		093AE44824B11C1C00B126E2 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE44724B11C1C00B126E2 /* Folder.swift */; };
+		093AE44B24B11D8500B126E2 /* FolderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE44A24B11D8500B126E2 /* FolderTests.swift */; };
+		093AE44E24B11EC300B126E2 /* BrowserCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE44D24B11EC300B126E2 /* BrowserCoordinator.swift */; };
+		093AE45024B11F9B00B126E2 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE44F24B11F9B00B126E2 /* MainCoordinator.swift */; };
+		093AE45224B11FE100B126E2 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE45124B11FE100B126E2 /* CoordinatorTests.swift */; };
+		093AE45524B1208A00B126E2 /* MockDiscogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE45424B1208A00B126E2 /* MockDiscogsService.swift */; };
+		093AE45724B1212400B126E2 /* MockRemoteMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE45624B1212400B126E2 /* MockRemoteMethod.swift */; };
+		093AE45A24B12E7D00B126E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE45924B12E7D00B126E2 /* BaseViewController.swift */; };
+		093AE45D24B12EE900B126E2 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE45C24B12EE900B126E2 /* BrowserViewController.swift */; };
+		093AE45F24B1312400B126E2 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE45E24B1312400B126E2 /* XCTestCase+Extensions.swift */; };
+		093AE46124B13E4D00B126E2 /* DiscogsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE46024B13E4D00B126E2 /* DiscogsClient.swift */; };
+		093AE46324B1415400B126E2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE46224B1415300B126E2 /* Environment.swift */; };
+		093AE46624B1476400B126E2 /* URLSessionDataTaskPublisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE46524B1476400B126E2 /* URLSessionDataTaskPublisher+Extensions.swift */; };
+		093AE46824B1480F00B126E2 /* DiscogsClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE46724B1480F00B126E2 /* DiscogsClientTests.swift */; };
+		093AE46A24B1517400B126E2 /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE46924B1517400B126E2 /* Publisher+Extensions.swift */; };
+		093AE46C24B156F900B126E2 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE46B24B156F900B126E2 /* Fixtures.swift */; };
+		093AE47824B15A2C00B126E2 /* Fixtures in Resources */ = {isa = PBXBuildFile; fileRef = 093AE47724B15A2B00B126E2 /* Fixtures */; };
+		093AE47D24B2398600B126E2 /* Release.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE47C24B2398600B126E2 /* Release.swift */; };
+		093AE48024B23AF300B126E2 /* BrowserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE47F24B23AF300B126E2 /* BrowserDataSource.swift */; };
+		093AE48224B23B7500B126E2 /* Browsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE48124B23B7500B126E2 /* Browsable.swift */; };
+		093AE48624B24C9800B126E2 /* ReleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE48524B24C9800B126E2 /* ReleaseTests.swift */; };
+		09F1CBC924B263FF007B676A /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBC824B263FF007B676A /* Artist.swift */; };
+		09F1CBCB24B26447007B676A /* RecordLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBCA24B26447007B676A /* RecordLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +67,34 @@
 		093AE41E24B1190B00B126E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		093AE42024B1190B00B126E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		093AE42524B1190B00B126E2 /* DiscogsStreamerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsStreamerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		093AE42924B1190B00B126E2 /* DiscogsStreamerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsStreamerTests.swift; sourceTree = "<group>"; };
 		093AE42B24B1190B00B126E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		093AE43024B1190B00B126E2 /* DiscogsStreamerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsStreamerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		093AE43424B1190B00B126E2 /* DiscogsStreamerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsStreamerUITests.swift; sourceTree = "<group>"; };
 		093AE43624B1190B00B126E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		093AE44324B11A2500B126E2 /* DiscogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsService.swift; sourceTree = "<group>"; };
+		093AE44724B11C1C00B126E2 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		093AE44A24B11D8500B126E2 /* FolderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderTests.swift; sourceTree = "<group>"; };
+		093AE44D24B11EC300B126E2 /* BrowserCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserCoordinator.swift; sourceTree = "<group>"; };
+		093AE44F24B11F9B00B126E2 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		093AE45124B11FE100B126E2 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
+		093AE45424B1208A00B126E2 /* MockDiscogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDiscogsService.swift; sourceTree = "<group>"; };
+		093AE45624B1212400B126E2 /* MockRemoteMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoteMethod.swift; sourceTree = "<group>"; };
+		093AE45924B12E7D00B126E2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		093AE45C24B12EE900B126E2 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		093AE45E24B1312400B126E2 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		093AE46024B13E4D00B126E2 /* DiscogsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsClient.swift; sourceTree = "<group>"; };
+		093AE46224B1415300B126E2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		093AE46524B1476400B126E2 /* URLSessionDataTaskPublisher+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSessionDataTaskPublisher+Extensions.swift"; sourceTree = "<group>"; };
+		093AE46724B1480F00B126E2 /* DiscogsClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsClientTests.swift; sourceTree = "<group>"; };
+		093AE46924B1517400B126E2 /* Publisher+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Extensions.swift"; sourceTree = "<group>"; };
+		093AE46B24B156F900B126E2 /* Fixtures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
+		093AE47724B15A2B00B126E2 /* Fixtures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fixtures; sourceTree = "<group>"; };
+		093AE47C24B2398600B126E2 /* Release.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Release.swift; sourceTree = "<group>"; };
+		093AE47F24B23AF300B126E2 /* BrowserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserDataSource.swift; sourceTree = "<group>"; };
+		093AE48124B23B7500B126E2 /* Browsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browsable.swift; sourceTree = "<group>"; };
+		093AE48524B24C9800B126E2 /* ReleaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseTests.swift; sourceTree = "<group>"; };
+		09F1CBC824B263FF007B676A /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		09F1CBCA24B26447007B676A /* RecordLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +145,8 @@
 		093AE41124B1190900B126E2 /* DiscogsStreamer */ = {
 			isa = PBXGroup;
 			children = (
+				093AE44224B11A0500B126E2 /* Browser */,
+				093AE44524B11A3800B126E2 /* Common */,
 				093AE41224B1190900B126E2 /* AppDelegate.swift */,
 				093AE41424B1190900B126E2 /* SceneDelegate.swift */,
 				093AE41624B1190900B126E2 /* ContentView.swift */,
@@ -121,8 +169,12 @@
 		093AE42824B1190B00B126E2 /* DiscogsStreamerTests */ = {
 			isa = PBXGroup;
 			children = (
-				093AE42924B1190B00B126E2 /* DiscogsStreamerTests.swift */,
+				093AE48424B24C6F00B126E2 /* Model */,
+				093AE48324B24C6A00B126E2 /* Network */,
+				093AE47724B15A2B00B126E2 /* Fixtures */,
+				093AE45124B11FE100B126E2 /* CoordinatorTests.swift */,
 				093AE42B24B1190B00B126E2 /* Info.plist */,
+				093AE45324B1207C00B126E2 /* Utilities */,
 			);
 			path = DiscogsStreamerTests;
 			sourceTree = "<group>";
@@ -134,6 +186,119 @@
 				093AE43624B1190B00B126E2 /* Info.plist */,
 			);
 			path = DiscogsStreamerUITests;
+			sourceTree = "<group>";
+		};
+		093AE44224B11A0500B126E2 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				093AE44624B11C1200B126E2 /* Model */,
+				093AE47E24B23AE400B126E2 /* DataSource */,
+				093AE45B24B12EDE00B126E2 /* View */,
+				093AE44C24B11EA900B126E2 /* Coordinator */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		093AE44524B11A3800B126E2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				093AE45824B12E6C00B126E2 /* BaseView */,
+				093AE46424B1475300B126E2 /* Extensions */,
+				093AE44924B11CC100B126E2 /* Service */,
+				093AE46224B1415300B126E2 /* Environment.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		093AE44624B11C1200B126E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09F1CBC824B263FF007B676A /* Artist.swift */,
+				093AE48124B23B7500B126E2 /* Browsable.swift */,
+				093AE44724B11C1C00B126E2 /* Folder.swift */,
+				09F1CBCA24B26447007B676A /* RecordLabel.swift */,
+				093AE47C24B2398600B126E2 /* Release.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		093AE44924B11CC100B126E2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				093AE44324B11A2500B126E2 /* DiscogsService.swift */,
+				093AE46024B13E4D00B126E2 /* DiscogsClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		093AE44C24B11EA900B126E2 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				093AE44D24B11EC300B126E2 /* BrowserCoordinator.swift */,
+				093AE44F24B11F9B00B126E2 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		093AE45324B1207C00B126E2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				093AE45424B1208A00B126E2 /* MockDiscogsService.swift */,
+				093AE45624B1212400B126E2 /* MockRemoteMethod.swift */,
+				093AE45E24B1312400B126E2 /* XCTestCase+Extensions.swift */,
+				093AE46B24B156F900B126E2 /* Fixtures.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		093AE45824B12E6C00B126E2 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				093AE45924B12E7D00B126E2 /* BaseViewController.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		093AE45B24B12EDE00B126E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				093AE45C24B12EE900B126E2 /* BrowserViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		093AE46424B1475300B126E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				093AE46524B1476400B126E2 /* URLSessionDataTaskPublisher+Extensions.swift */,
+				093AE46924B1517400B126E2 /* Publisher+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		093AE47E24B23AE400B126E2 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				093AE47F24B23AF300B126E2 /* BrowserDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		093AE48324B24C6A00B126E2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				093AE46724B1480F00B126E2 /* DiscogsClientTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		093AE48424B24C6F00B126E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				093AE44A24B11D8500B126E2 /* FolderTests.swift */,
+				093AE48524B24C9800B126E2 /* ReleaseTests.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +415,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093AE47824B15A2C00B126E2 /* Fixtures in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +433,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093AE44424B11A2500B126E2 /* DiscogsService.swift in Sources */,
+				093AE47D24B2398600B126E2 /* Release.swift in Sources */,
+				093AE45D24B12EE900B126E2 /* BrowserViewController.swift in Sources */,
+				093AE45024B11F9B00B126E2 /* MainCoordinator.swift in Sources */,
+				093AE44E24B11EC300B126E2 /* BrowserCoordinator.swift in Sources */,
+				093AE44824B11C1C00B126E2 /* Folder.swift in Sources */,
+				093AE48024B23AF300B126E2 /* BrowserDataSource.swift in Sources */,
+				093AE46A24B1517400B126E2 /* Publisher+Extensions.swift in Sources */,
+				093AE46124B13E4D00B126E2 /* DiscogsClient.swift in Sources */,
 				093AE41324B1190900B126E2 /* AppDelegate.swift in Sources */,
+				093AE46324B1415400B126E2 /* Environment.swift in Sources */,
+				093AE48224B23B7500B126E2 /* Browsable.swift in Sources */,
+				093AE46624B1476400B126E2 /* URLSessionDataTaskPublisher+Extensions.swift in Sources */,
+				093AE45A24B12E7D00B126E2 /* BaseViewController.swift in Sources */,
+				09F1CBC924B263FF007B676A /* Artist.swift in Sources */,
 				093AE41524B1190900B126E2 /* SceneDelegate.swift in Sources */,
 				093AE41724B1190900B126E2 /* ContentView.swift in Sources */,
+				09F1CBCB24B26447007B676A /* RecordLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +458,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				093AE42A24B1190B00B126E2 /* DiscogsStreamerTests.swift in Sources */,
+				093AE44B24B11D8500B126E2 /* FolderTests.swift in Sources */,
+				093AE48624B24C9800B126E2 /* ReleaseTests.swift in Sources */,
+				093AE45524B1208A00B126E2 /* MockDiscogsService.swift in Sources */,
+				093AE46C24B156F900B126E2 /* Fixtures.swift in Sources */,
+				093AE46824B1480F00B126E2 /* DiscogsClientTests.swift in Sources */,
+				093AE45724B1212400B126E2 /* MockRemoteMethod.swift in Sources */,
+				093AE45F24B1312400B126E2 /* XCTestCase+Extensions.swift in Sources */,
+				093AE45224B11FE100B126E2 /* CoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,2866 @@
+{
+"pagination": {
+"page": 1,
+"pages": 23,
+"per_page": 50,
+"items": 1144,
+"urls": {
+"last": "https://api.discogs.com/users/spencermiles/collection/folders/0/releases?sort=added&sort_order=desc&page=23&per_page=50",
+"next": "https://api.discogs.com/users/spencermiles/collection/folders/0/releases?sort=added&sort_order=desc&page=2&per_page=50"
+}
+},
+"releases": [
+{
+"id": 13864934,
+"instance_id": 479814519,
+"date_added": "2020-06-12T20:24:10-07:00",
+"rating": 0,
+"basic_information": {
+"id": 13864934,
+"master_id": 1549987,
+"master_url": "https://api.discogs.com/masters/1549987",
+"resource_url": "https://api.discogs.com/releases/13864934",
+"thumb": "",
+"cover_image": "",
+"title": "Fr-Dpx  ",
+"year": 2019,
+"formats": [],
+"labels": [],
+"artists": [
+{
+"name": "E.R.P.",
+"anv": "",
+"join": "/",
+"role": "",
+"tracks": "",
+"id": 65705,
+"resource_url": "https://api.discogs.com/artists/65705"
+},
+{
+"name": "Duplex",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 2565,
+"resource_url": "https://api.discogs.com/artists/2565"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Electro",
+"Breakbeat"
+]
+}
+},
+{
+"id": 15043757,
+"instance_id": 479814402,
+"date_added": "2020-06-12T20:23:17-07:00",
+"rating": 0,
+"basic_information": {
+"id": 15043757,
+"master_id": 1710750,
+"master_url": "https://api.discogs.com/masters/1710750",
+"resource_url": "https://api.discogs.com/releases/15043757",
+"thumb": "",
+"cover_image": "",
+"title": "Second Language",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"LP"
+]
+}
+],
+"labels": [
+{
+"name": "Whities",
+"catno": "WHYT028",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 652896,
+"resource_url": "https://api.discogs.com/labels/652896"
+}
+],
+"artists": [
+{
+"name": "Minor Science",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 3720639,
+"resource_url": "https://api.discogs.com/artists/3720639"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Leftfield",
+"Techno",
+"House",
+"Experimental",
+"Ambient"
+]
+}
+},
+{
+"id": 14911357,
+"instance_id": 479813885,
+"date_added": "2020-06-12T20:18:45-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14911357,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/14911357",
+"thumb": "",
+"cover_image": "",
+"title": "Rites And Rituals",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Prescription Underground",
+"catno": "PU-001",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1785327,
+"resource_url": "https://api.discogs.com/labels/1785327"
+},
+{
+"name": "MusicandPower",
+"catno": "#001",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 769875,
+"resource_url": "https://api.discogs.com/labels/769875"
+}
+],
+"artists": [
+{
+"name": "Indigo Tracks",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 1266,
+"resource_url": "https://api.discogs.com/artists/1266"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"House",
+"Tribal"
+]
+}
+},
+{
+"id": 15161527,
+"instance_id": 479813828,
+"date_added": "2020-06-12T20:18:17-07:00",
+"rating": 0,
+"basic_information": {
+"id": 15161527,
+"master_id": 1698479,
+"master_url": "https://api.discogs.com/masters/1698479",
+"resource_url": "https://api.discogs.com/releases/15161527",
+"thumb": "",
+"cover_image": "",
+"title": "Sixteen Oceans",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "2",
+"descriptions": [
+"LP",
+"Album"
+]
+}
+],
+"labels": [
+{
+"name": "Text Records",
+"catno": "TEXT051",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 11205,
+"resource_url": "https://api.discogs.com/labels/11205"
+}
+],
+"artists": [
+{
+"name": "Four Tet",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 3543,
+"resource_url": "https://api.discogs.com/artists/3543"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Ambient",
+"House",
+"Techno",
+"Downtempo",
+"Minimal"
+]
+}
+},
+{
+"id": 14659111,
+"instance_id": 479813703,
+"date_added": "2020-06-12T20:17:09-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14659111,
+"master_id": 2910,
+"master_url": "https://api.discogs.com/masters/2910",
+"resource_url": "https://api.discogs.com/releases/14659111",
+"thumb": "",
+"cover_image": "",
+"title": "Atmosphere E.P. Vol. 1",
+"year": 2018,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM",
+"EP",
+"Repress"
+]
+}
+],
+"labels": [
+{
+"name": "Shelter Records (3)",
+"catno": "SHL - 1004",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 122670,
+"resource_url": "https://api.discogs.com/labels/122670"
+}
+],
+"artists": [
+{
+"name": "Kerri Chandler",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 59,
+"resource_url": "https://api.discogs.com/artists/59"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"House",
+"Deep House"
+]
+}
+},
+{
+"id": 12150740,
+"instance_id": 479813362,
+"date_added": "2020-06-12T20:13:57-07:00",
+"rating": 0,
+"basic_information": {
+"id": 12150740,
+"master_id": 1382247,
+"master_url": "https://api.discogs.com/masters/1382247",
+"resource_url": "https://api.discogs.com/releases/12150740",
+"thumb": "",
+"cover_image": "",
+"title": "The Sound Of Love International #001",
+"year": 2018,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "2",
+"descriptions": [
+"LP",
+"Compilation"
+]
+}
+],
+"labels": [
+{
+"name": "Love International X Test Pressing",
+"catno": "LITPLP001",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1479927,
+"resource_url": "https://api.discogs.com/labels/1479927"
+},
+{
+"name": "Love International Recordings",
+"catno": "LITPLP001",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1458773,
+"resource_url": "https://api.discogs.com/labels/1458773"
+},
+{
+"name": "Test Pressing (4)",
+"catno": "LITPLP001",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 918190,
+"resource_url": "https://api.discogs.com/labels/918190"
+}
+],
+"artists": [
+{
+"name": "Gatto Fritto",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 866679,
+"resource_url": "https://api.discogs.com/artists/866679"
+}
+],
+"genres": [
+"Electronic",
+"Jazz",
+"Rock",
+"Reggae",
+"Funk / Soul",
+"Folk, World, & Country"
+],
+"styles": [
+"Downtempo",
+"Dub",
+"House",
+"Techno",
+"Leftfield"
+]
+}
+},
+{
+"id": 13139161,
+"instance_id": 479813329,
+"date_added": "2020-06-12T20:13:40-07:00",
+"rating": 0,
+"basic_information": {
+"id": 13139161,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/13139161",
+"thumb": "",
+"cover_image": "",
+"title": "U+Zone",
+"year": 2019,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\""
+]
+}
+],
+"labels": [
+{
+"name": "Butter Sessions",
+"catno": "BSR 021",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 613223,
+"resource_url": "https://api.discogs.com/labels/613223"
+}
+],
+"artists": [
+{
+"name": "Sleep D",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 2762794,
+"resource_url": "https://api.discogs.com/artists/2762794"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Electro",
+"Techno"
+]
+}
+},
+{
+"id": 11951038,
+"instance_id": 479813297,
+"date_added": "2020-06-12T20:13:25-07:00",
+"rating": 0,
+"basic_information": {
+"id": 11951038,
+"master_id": 1374536,
+"master_url": "https://api.discogs.com/masters/1374536",
+"resource_url": "https://api.discogs.com/releases/11951038",
+"thumb": "",
+"cover_image": "",
+"title": "Trigger Zone",
+"year": 2018,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM",
+"EP"
+]
+}
+],
+"labels": [
+{
+"name": "International Chrome",
+"catno": "INTLC001",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1458710,
+"resource_url": "https://api.discogs.com/labels/1458710"
+}
+],
+"artists": [
+{
+"name": "The Hacker",
+"anv": "",
+"join": "&",
+"role": "",
+"tracks": "",
+"id": 1737,
+"resource_url": "https://api.discogs.com/artists/1737"
+},
+{
+"name": "Jensen Interceptor (2)",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 2784219,
+"resource_url": "https://api.discogs.com/artists/2784219"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Electro",
+"EBM"
+]
+}
+},
+{
+"id": 14574285,
+"instance_id": 479813204,
+"date_added": "2020-06-12T20:12:43-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14574285,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/14574285",
+"thumb": "",
+"cover_image": "",
+"title": "Moon Replacement",
+"year": 2019,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Public Release",
+"catno": "PR21",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 175030,
+"resource_url": "https://api.discogs.com/labels/175030"
+}
+],
+"artists": [
+{
+"name": "Anderson Chase",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 7563668,
+"resource_url": "https://api.discogs.com/artists/7563668"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"House",
+"Techno"
+]
+}
+},
+{
+"id": 913430,
+"instance_id": 479813165,
+"date_added": "2020-06-12T20:12:18-07:00",
+"rating": 0,
+"basic_information": {
+"id": 913430,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/913430",
+"thumb": "",
+"cover_image": "",
+"title": "Pixelgirl EP",
+"year": 2007,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"EP",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Planet E",
+"catno": "PE65289-1",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1,
+"resource_url": "https://api.discogs.com/labels/1"
+}
+],
+"artists": [
+{
+"name": "Lazy Fat People",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 456555,
+"resource_url": "https://api.discogs.com/artists/456555"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Techno",
+"Tech House",
+"Minimal"
+]
+}
+},
+{
+"id": 12722163,
+"instance_id": 479813044,
+"date_added": "2020-06-12T20:11:17-07:00",
+"rating": 0,
+"basic_information": {
+"id": 12722163,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/12722163",
+"thumb": "",
+"cover_image": "",
+"title": "Celine's Dilemma",
+"year": 2018,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"EP"
+]
+}
+],
+"labels": [
+{
+"name": "Optimo Music",
+"catno": "OM42",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 140001,
+"resource_url": "https://api.discogs.com/labels/140001"
+}
+],
+"artists": [
+{
+"name": "Stranded (16)",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 6781059,
+"resource_url": "https://api.discogs.com/artists/6781059"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Disco",
+"New Wave"
+]
+}
+},
+{
+"id": 14610863,
+"instance_id": 479812943,
+"date_added": "2020-06-12T20:10:28-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14610863,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/14610863",
+"thumb": "",
+"cover_image": "",
+"title": "BEAUTIFULPLACE",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM",
+"EP"
+]
+}
+],
+"labels": [
+{
+"name": "BEAUTIFULPLACE",
+"catno": "BEAUTIFULPLACE",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1745927,
+"resource_url": "https://api.discogs.com/labels/1745927"
+}
+],
+"artists": [
+{
+"name": "BEAUTIFULPLACE",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 7579876,
+"resource_url": "https://api.discogs.com/artists/7579876"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Minimal",
+"Broken Beat"
+]
+}
+},
+{
+"id": 14610863,
+"instance_id": 479812939,
+"date_added": "2020-06-12T20:10:26-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14610863,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/14610863",
+"thumb": "",
+"cover_image": "",
+"title": "BEAUTIFULPLACE",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM",
+"EP"
+]
+}
+],
+"labels": [
+{
+"name": "BEAUTIFULPLACE",
+"catno": "BEAUTIFULPLACE",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1745927,
+"resource_url": "https://api.discogs.com/labels/1745927"
+}
+],
+"artists": [
+{
+"name": "BEAUTIFULPLACE",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 7579876,
+"resource_url": "https://api.discogs.com/artists/7579876"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Minimal",
+"Broken Beat"
+]
+}
+},
+{
+"id": 14273633,
+"instance_id": 479812895,
+"date_added": "2020-06-12T20:10:03-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14273633,
+"master_id": 1628324,
+"master_url": "https://api.discogs.com/masters/1628324",
+"resource_url": "https://api.discogs.com/releases/14273633",
+"thumb": "",
+"cover_image": "",
+"title": "Bioluminescence",
+"year": 2019,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"LP",
+"Album",
+"Stereo"
+]
+}
+],
+"labels": [
+{
+"name": "Astral Industries",
+"catno": "AI-16",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 694039,
+"resource_url": "https://api.discogs.com/labels/694039"
+}
+],
+"artists": [
+{
+"name": "Shorelights",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 5915261,
+"resource_url": "https://api.discogs.com/artists/5915261"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Ambient",
+"Minimal",
+"Drone"
+]
+}
+},
+{
+"id": 14767336,
+"instance_id": 479812855,
+"date_added": "2020-06-12T20:09:42-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14767336,
+"master_id": 1681925,
+"master_url": "https://api.discogs.com/masters/1681925",
+"resource_url": "https://api.discogs.com/releases/14767336",
+"thumb": "",
+"cover_image": "",
+"title": "Ancient Circuits",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "2",
+"descriptions": [
+"LP",
+"Album",
+"Stereo"
+]
+}
+],
+"labels": [
+{
+"name": "Astral Industries",
+"catno": "AI-17",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 694039,
+"resource_url": "https://api.discogs.com/labels/694039"
+}
+],
+"artists": [
+{
+"name": "Multicast Dynamics",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 2340491,
+"resource_url": "https://api.discogs.com/artists/2340491"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Ambient"
+]
+}
+},
+{
+"id": 14892592,
+"instance_id": 479812828,
+"date_added": "2020-06-12T20:09:24-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14892592,
+"master_id": 1694860,
+"master_url": "https://api.discogs.com/masters/1694860",
+"resource_url": "https://api.discogs.com/releases/14892592",
+"thumb": "",
+"cover_image": "",
+"title": "Travel In Peace",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"LP",
+"Album"
+]
+}
+],
+"labels": [
+{
+"name": "Astral Industries",
+"catno": "AI-18",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 694039,
+"resource_url": "https://api.discogs.com/labels/694039"
+}
+],
+"artists": [
+{
+"name": "Chi",
+"anv": "The Chi Factory",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 197792,
+"resource_url": "https://api.discogs.com/artists/197792"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Ambient"
+]
+}
+},
+{
+"id": 10351252,
+"instance_id": 474299586,
+"date_added": "2020-05-26T13:48:16-07:00",
+"rating": 0,
+"basic_information": {
+"id": 10351252,
+"master_id": 1594173,
+"master_url": "https://api.discogs.com/masters/1594173",
+"resource_url": "https://api.discogs.com/releases/10351252",
+"thumb": "",
+"cover_image": "",
+"title": "Casa Sports Vol.1",
+"year": 2017,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Casa Voyager",
+"catno": "CSV01",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1174146,
+"resource_url": "https://api.discogs.com/labels/1174146"
+}
+],
+"artists": [
+{
+"name": "Various",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 194,
+"resource_url": "https://api.discogs.com/artists/194"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Electro",
+"Techno"
+]
+}
+},
+{
+"id": 178515,
+"instance_id": 461973928,
+"date_added": "2020-04-24T13:33:10-07:00",
+"rating": 0,
+"basic_information": {
+"id": 178515,
+"master_id": 39957,
+"master_url": "https://api.discogs.com/masters/39957",
+"resource_url": "https://api.discogs.com/releases/178515",
+"thumb": "",
+"cover_image": "",
+"title": "Jungle Bill",
+"year": 1992,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Smash Records",
+"catno": "162-880 003-1",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1633,
+"resource_url": "https://api.discogs.com/labels/1633"
+}
+],
+"artists": [
+{
+"name": "Yello",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 5873,
+"resource_url": "https://api.discogs.com/artists/5873"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Techno",
+"Electro"
+]
+}
+},
+{
+"id": 5864,
+"instance_id": 461973890,
+"date_added": "2020-04-24T13:33:01-07:00",
+"rating": 0,
+"basic_information": {
+"id": 5864,
+"master_id": 22164,
+"master_url": "https://api.discogs.com/masters/22164",
+"resource_url": "https://api.discogs.com/releases/5864",
+"thumb": "",
+"cover_image": "",
+"title": "Chime",
+"year": 1990,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"Single",
+"45 RPM"
+]
+}
+],
+"labels": [
+{
+"name": "FFRR",
+"catno": "FX 135",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 297,
+"resource_url": "https://api.discogs.com/labels/297"
+},
+{
+"name": "FFRR",
+"catno": "886 977-1",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 297,
+"resource_url": "https://api.discogs.com/labels/297"
+},
+{
+"name": "Oh'Zone Records",
+"catno": "FX 135",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 8012,
+"resource_url": "https://api.discogs.com/labels/8012"
+}
+],
+"artists": [
+{
+"name": "Orbital",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 1279,
+"resource_url": "https://api.discogs.com/artists/1279"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Techno"
+]
+}
+},
+{
+"id": 13628,
+"instance_id": 461973859,
+"date_added": "2020-04-24T13:32:58-07:00",
+"rating": 0,
+"basic_information": {
+"id": 13628,
+"master_id": 32355,
+"master_url": "https://api.discogs.com/masters/32355",
+"resource_url": "https://api.discogs.com/releases/13628",
+"thumb": "",
+"cover_image": "",
+"title": "Stakker Humanoid",
+"year": 1988,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"text": "Picture Sleeve",
+"descriptions": [
+"12\"",
+"45 RPM",
+"Stereo"
+]
+}
+],
+"labels": [
+{
+"name": "Westside Records (2)",
+"catno": "WSRT 12",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 2820,
+"resource_url": "https://api.discogs.com/labels/2820"
+}
+],
+"artists": [
+{
+"name": "Humanoid",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 7262,
+"resource_url": "https://api.discogs.com/artists/7262"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Acid House",
+"Techno"
+]
+}
+},
+{
+"id": 127724,
+"instance_id": 461973830,
+"date_added": "2020-04-24T13:32:54-07:00",
+"rating": 0,
+"basic_information": {
+"id": 127724,
+"master_id": 5325,
+"master_url": "https://api.discogs.com/masters/5325",
+"resource_url": "https://api.discogs.com/releases/127724",
+"thumb": "",
+"cover_image": "",
+"title": "The Chase",
+"year": 1989,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"45 RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Kool Kat",
+"catno": "KOOL T 507",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 145496,
+"resource_url": "https://api.discogs.com/labels/145496"
+},
+{
+"name": "Kool Kat",
+"catno": "KOOL T507",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 145496,
+"resource_url": "https://api.discogs.com/labels/145496"
+},
+{
+"name": "Big Life",
+"catno": "KOOL T 507",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 616,
+"resource_url": "https://api.discogs.com/labels/616"
+},
+{
+"name": "Big Life",
+"catno": "KOOL T507",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 616,
+"resource_url": "https://api.discogs.com/labels/616"
+}
+],
+"artists": [
+{
+"name": "Model 500",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 1141,
+"resource_url": "https://api.discogs.com/artists/1141"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Techno"
+]
+}
+},
+{
+"id": 1172108,
+"instance_id": 461973805,
+"date_added": "2020-04-24T13:32:49-07:00",
+"rating": 0,
+"basic_information": {
+"id": 1172108,
+"master_id": 5216,
+"master_url": "https://api.discogs.com/masters/5216",
+"resource_url": "https://api.discogs.com/releases/1172108",
+"thumb": "",
+"cover_image": "",
+"title": "Free Yourself",
+"year": 1986,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"text": "Red Labels",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Trax Records",
+"catno": "TX114",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 267,
+"resource_url": "https://api.discogs.com/labels/267"
+}
+],
+"artists": [
+{
+"name": "Virgo",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 2762,
+"resource_url": "https://api.discogs.com/artists/2762"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"House"
+]
+}
+},
+{
+"id": 56200,
+"instance_id": 461973775,
+"date_added": "2020-04-24T13:32:44-07:00",
+"rating": 0,
+"basic_information": {
+"id": 56200,
+"master_id": 36892,
+"master_url": "https://api.discogs.com/masters/36892",
+"resource_url": "https://api.discogs.com/releases/56200",
+"thumb": "",
+"cover_image": "",
+"title": "You're The One For Me",
+"year": 1981,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Prelude Records",
+"catno": "PRL D 621",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 4081,
+"resource_url": "https://api.discogs.com/labels/4081"
+}
+],
+"artists": [
+{
+"name": "D-Train",
+"anv": "\"D\" Train",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 14185,
+"resource_url": "https://api.discogs.com/artists/14185"
+}
+],
+"genres": [
+"Electronic",
+"Funk / Soul"
+],
+"styles": [
+"Electro",
+"Funk",
+"Disco"
+]
+}
+},
+{
+"id": 35955,
+"instance_id": 461973730,
+"date_added": "2020-04-24T13:32:36-07:00",
+"rating": 0,
+"basic_information": {
+"id": 35955,
+"master_id": 6424,
+"master_url": "https://api.discogs.com/masters/6424",
+"resource_url": "https://api.discogs.com/releases/35955",
+"thumb": "",
+"cover_image": "",
+"title": "Papua New Guinea",
+"year": 2002,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Superstar Recordings",
+"catno": "SUPER DJ 2042 DMD",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1787,
+"resource_url": "https://api.discogs.com/labels/1787"
+}
+],
+"artists": [
+{
+"name": "The Future Sound Of London",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 2549,
+"resource_url": "https://api.discogs.com/artists/2549"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Progressive House",
+"Trance"
+]
+}
+},
+{
+"id": 783570,
+"instance_id": 461973704,
+"date_added": "2020-04-24T13:32:33-07:00",
+"rating": 0,
+"basic_information": {
+"id": 783570,
+"master_id": 963153,
+"master_url": "https://api.discogs.com/masters/963153",
+"resource_url": "https://api.discogs.com/releases/783570",
+"thumb": "",
+"cover_image": "",
+"title": "Animals Of Africa (Sounds Of The Jungle, Plain & Bush)",
+"year": 1973,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"LP",
+"Album"
+]
+}
+],
+"labels": [
+{
+"name": "Nonesuch",
+"catno": "H-72056",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 652,
+"resource_url": "https://api.discogs.com/labels/652"
+}
+],
+"artists": [
+{
+"name": "No Artist",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 118760,
+"resource_url": "https://api.discogs.com/artists/118760"
+}
+],
+"genres": [
+"Non-Music"
+],
+"styles": [
+"Field Recording"
+]
+}
+},
+{
+"id": 11749233,
+"instance_id": 461973610,
+"date_added": "2020-04-24T13:32:21-07:00",
+"rating": 0,
+"basic_information": {
+"id": 11749233,
+"master_id": 1461043,
+"master_url": "https://api.discogs.com/masters/1461043",
+"resource_url": "https://api.discogs.com/releases/11749233",
+"thumb": "",
+"cover_image": "",
+"title": "U KNO",
+"year": 2018,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"LP",
+"Mini-Album"
+]
+}
+],
+"labels": [
+{
+"name": "No 'Label'",
+"catno": "RHD-033U KNO",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 425519,
+"resource_url": "https://api.discogs.com/labels/425519"
+}
+],
+"artists": [
+{
+"name": "SK U Kno",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 6380027,
+"resource_url": "https://api.discogs.com/artists/6380027"
+}
+],
+"genres": [
+"Electronic",
+"Non-Music"
+],
+"styles": [
+"Abstract",
+"Downtempo",
+"Ambient"
+]
+}
+},
+{
+"id": 12077771,
+"instance_id": 461973547,
+"date_added": "2020-04-24T13:32:11-07:00",
+"rating": 0,
+"basic_information": {
+"id": 12077771,
+"master_id": 23865,
+"master_url": "https://api.discogs.com/masters/23865",
+"resource_url": "https://api.discogs.com/releases/12077771",
+"thumb": "",
+"cover_image": "",
+"title": "Nonline",
+"year": 2018,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"text": "Blue",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM",
+"Limited Edition",
+"Numbered",
+"Remastered"
+]
+}
+],
+"labels": [
+{
+"name": "Mr. Disc Organization",
+"catno": "MD 31804",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 4461,
+"resource_url": "https://api.discogs.com/labels/4461"
+}
+],
+"artists": [
+{
+"name": "International Music System",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 65066,
+"resource_url": "https://api.discogs.com/artists/65066"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Italo-Disco",
+"Electro",
+"Synth-pop"
+]
+}
+},
+{
+"id": 9983611,
+"instance_id": 461973513,
+"date_added": "2020-04-24T13:32:03-07:00",
+"rating": 0,
+"basic_information": {
+"id": 9983611,
+"master_id": 1185372,
+"master_url": "https://api.discogs.com/masters/1185372",
+"resource_url": "https://api.discogs.com/releases/9983611",
+"thumb": "",
+"cover_image": "",
+"title": "To Africa / Soul Makossa",
+"year": 2017,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"45 RPM",
+"Limited Edition"
+]
+}
+],
+"labels": [
+{
+"name": "Best Record Italy",
+"catno": "BST-X018",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 814792,
+"resource_url": "https://api.discogs.com/labels/814792"
+},
+{
+"name": "Best Record",
+"catno": "BST-X018",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 6796,
+"resource_url": "https://api.discogs.com/labels/6796"
+}
+],
+"artists": [
+{
+"name": "Pino Presti",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 623714,
+"resource_url": "https://api.discogs.com/artists/623714"
+}
+],
+"genres": [
+"Electronic",
+"Jazz",
+"Funk / Soul"
+],
+"styles": [
+"Synth-pop",
+"Disco"
+]
+}
+},
+{
+"id": 128832,
+"instance_id": 461973476,
+"date_added": "2020-04-24T13:31:57-07:00",
+"rating": 0,
+"basic_information": {
+"id": 128832,
+"master_id": 5169,
+"master_url": "https://api.discogs.com/masters/5169",
+"resource_url": "https://api.discogs.com/releases/128832",
+"thumb": "",
+"cover_image": "",
+"title": "Hydrology",
+"year": 1988,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"LP",
+"Album"
+]
+}
+],
+"labels": [
+{
+"name": "Mute",
+"catno": "STUMM51",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 26391,
+"resource_url": "https://api.discogs.com/labels/26391"
+}
+],
+"artists": [
+{
+"name": "Recoil",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 9542,
+"resource_url": "https://api.discogs.com/artists/9542"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Downtempo"
+]
+}
+},
+{
+"id": 175308,
+"instance_id": 461973386,
+"date_added": "2020-04-24T13:31:45-07:00",
+"rating": 0,
+"basic_information": {
+"id": 175308,
+"master_id": 1361311,
+"master_url": "https://api.discogs.com/masters/1361311",
+"resource_url": "https://api.discogs.com/releases/175308",
+"thumb": "",
+"cover_image": "",
+"title": "Yage",
+"year": 1996,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\""
+]
+}
+],
+"labels": [
+{
+"name": "Steel City Records",
+"catno": "SCR-106",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 8421,
+"resource_url": "https://api.discogs.com/labels/8421"
+}
+],
+"artists": [
+{
+"name": "Secret Werewolf",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 132159,
+"resource_url": "https://api.discogs.com/artists/132159"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Abstract",
+"Techno",
+"Minimal",
+"Experimental"
+]
+}
+},
+{
+"id": 1350153,
+"instance_id": 461973100,
+"date_added": "2020-04-24T13:30:51-07:00",
+"rating": 0,
+"basic_information": {
+"id": 1350153,
+"master_id": 13899,
+"master_url": "https://api.discogs.com/masters/13899",
+"resource_url": "https://api.discogs.com/releases/1350153",
+"thumb": "",
+"cover_image": "",
+"title": "The End (New Scratch-Mix)",
+"year": 1983,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"Maxi-Single"
+]
+}
+],
+"labels": [
+{
+"name": "Rams Horn Records",
+"catno": "RHR 3302",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 5218,
+"resource_url": "https://api.discogs.com/labels/5218"
+}
+],
+"artists": [
+{
+"name": "The Splash Band",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 243061,
+"resource_url": "https://api.discogs.com/artists/243061"
+}
+],
+"genres": [
+"Electronic",
+"Stage & Screen"
+],
+"styles": [
+"Synth-pop",
+"Electro",
+"Theme"
+]
+}
+},
+{
+"id": 14403628,
+"instance_id": 461972890,
+"date_added": "2020-04-24T13:30:15-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14403628,
+"master_id": 2100,
+"master_url": "https://api.discogs.com/masters/2100",
+"resource_url": "https://api.discogs.com/releases/14403628",
+"thumb": "",
+"cover_image": "",
+"title": "Peel Session TX 21/07/98",
+"year": 2019,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM",
+"EP",
+"Reissue"
+]
+}
+],
+"labels": [
+{
+"name": "Warp Records",
+"catno": "WARPLP300-3",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 23528,
+"resource_url": "https://api.discogs.com/labels/23528"
+}
+],
+"artists": [
+{
+"name": "Boards Of Canada",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 307,
+"resource_url": "https://api.discogs.com/artists/307"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Downtempo",
+"IDM",
+"Ambient"
+]
+}
+},
+{
+"id": 23357,
+"instance_id": 461972772,
+"date_added": "2020-04-24T13:29:56-07:00",
+"rating": 0,
+"basic_information": {
+"id": 23357,
+"master_id": 197834,
+"master_url": "https://api.discogs.com/masters/197834",
+"resource_url": "https://api.discogs.com/releases/23357",
+"thumb": "",
+"cover_image": "",
+"title": "Noodles Discotheque Vol. 3",
+"year": 2001,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Noodles Discotheque",
+"catno": "NOODJ 003",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 3960,
+"resource_url": "https://api.discogs.com/labels/3960"
+}
+],
+"artists": [
+{
+"name": "Various",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 194,
+"resource_url": "https://api.discogs.com/artists/194"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Abstract",
+"Experimental",
+"Disco"
+]
+}
+},
+{
+"id": 10991872,
+"instance_id": 461972554,
+"date_added": "2020-04-24T13:29:14-07:00",
+"rating": 0,
+"basic_information": {
+"id": 10991872,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/10991872",
+"thumb": "",
+"cover_image": "",
+"title": "CZ-5000 Sounds & Sequences",
+"year": 2017,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"LP",
+"Album"
+]
+}
+],
+"labels": [
+{
+"name": "Safe Trip",
+"catno": "ST 006",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 921893,
+"resource_url": "https://api.discogs.com/labels/921893"
+}
+],
+"artists": [
+{
+"name": "Satoshi & Makoto",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 6062660,
+"resource_url": "https://api.discogs.com/artists/6062660"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Ambient",
+"Experimental"
+]
+}
+},
+{
+"id": 8533408,
+"instance_id": 461971354,
+"date_added": "2020-04-24T13:25:46-07:00",
+"rating": 0,
+"basic_information": {
+"id": 8533408,
+"master_id": 171954,
+"master_url": "https://api.discogs.com/masters/171954",
+"resource_url": "https://api.discogs.com/releases/8533408",
+"thumb": "",
+"cover_image": "",
+"title": "World 2 World",
+"year": 2016,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM",
+"Reissue"
+]
+}
+],
+"labels": [
+{
+"name": "Underground Resistance",
+"catno": "UR-020",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 258,
+"resource_url": "https://api.discogs.com/labels/258"
+}
+],
+"artists": [
+{
+"name": "Underground Resistance",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 1160,
+"resource_url": "https://api.discogs.com/artists/1160"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Techno",
+"Future Jazz"
+]
+}
+},
+{
+"id": 14756347,
+"instance_id": 461971137,
+"date_added": "2020-04-24T13:25:16-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14756347,
+"master_id": 189959,
+"master_url": "https://api.discogs.com/masters/189959",
+"resource_url": "https://api.discogs.com/releases/14756347",
+"thumb": "",
+"cover_image": "",
+"title": "Innovator (Soundtrack For The Tenth Planet)",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "2",
+"text": "180g",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM",
+"EP",
+"Compilation",
+"Reissue",
+"Remastered"
+]
+}
+],
+"labels": [
+{
+"name": "Network Records",
+"catno": "NWKT21R",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1326,
+"resource_url": "https://api.discogs.com/labels/1326"
+}
+],
+"artists": [
+{
+"name": "Rhythim Is Rhythim",
+"anv": "",
+"join": "/",
+"role": "",
+"tracks": "",
+"id": 3133,
+"resource_url": "https://api.discogs.com/artists/3133"
+},
+{
+"name": "Derrick May",
+"anv": "",
+"join": "/",
+"role": "",
+"tracks": "",
+"id": 650,
+"resource_url": "https://api.discogs.com/artists/650"
+},
+{
+"name": "Mayday",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 4978,
+"resource_url": "https://api.discogs.com/artists/4978"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"House",
+"Techno"
+]
+}
+},
+{
+"id": 60825,
+"instance_id": 461970435,
+"date_added": "2020-04-24T13:23:31-07:00",
+"rating": 0,
+"basic_information": {
+"id": 60825,
+"master_id": 1647278,
+"master_url": "https://api.discogs.com/masters/1647278",
+"resource_url": "https://api.discogs.com/releases/60825",
+"thumb": "",
+"cover_image": "",
+"title": "The Rhythm Of Life",
+"year": 1989,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"LP",
+"Album"
+]
+}
+],
+"labels": [
+{
+"name": "Blue Chip",
+"catno": "BLUE TEC. 2",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 7493,
+"resource_url": "https://api.discogs.com/labels/7493"
+}
+],
+"artists": [
+{
+"name": "Nexus 21",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 6087,
+"resource_url": "https://api.discogs.com/artists/6087"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"House",
+"Techno"
+]
+}
+},
+{
+"id": 13378770,
+"instance_id": 461970336,
+"date_added": "2020-04-24T13:23:14-07:00",
+"rating": 0,
+"basic_information": {
+"id": 13378770,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/13378770",
+"thumb": "",
+"cover_image": "",
+"title": "Keep Hope Alive",
+"year": 2019,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Casa Voyager",
+"catno": "CSV05",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1174146,
+"resource_url": "https://api.discogs.com/labels/1174146"
+}
+],
+"artists": [
+{
+"name": "Kosh (7)",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 5927130,
+"resource_url": "https://api.discogs.com/artists/5927130"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Electro",
+"Techno",
+"Acid"
+]
+}
+},
+{
+"id": 10967865,
+"instance_id": 461970266,
+"date_added": "2020-04-24T13:23:01-07:00",
+"rating": 0,
+"basic_information": {
+"id": 10967865,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/10967865",
+"thumb": "",
+"cover_image": "",
+"title": "Null 212 ",
+"year": 2018,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"45 RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Casa Voyager",
+"catno": "CSV02",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1174146,
+"resource_url": "https://api.discogs.com/labels/1174146"
+}
+],
+"artists": [
+{
+"name": "Kosh (7)",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 5927130,
+"resource_url": "https://api.discogs.com/artists/5927130"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Electro",
+"Breakbeat"
+]
+}
+},
+{
+"id": 92967,
+"instance_id": 461970208,
+"date_added": "2020-04-24T13:22:48-07:00",
+"rating": 0,
+"basic_information": {
+"id": 92967,
+"master_id": 84451,
+"master_url": "https://api.discogs.com/masters/84451",
+"resource_url": "https://api.discogs.com/releases/92967",
+"thumb": "",
+"cover_image": "",
+"title": "Don't You Want It",
+"year": 2002,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "Underground Resistance",
+"catno": "UR-016",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 258,
+"resource_url": "https://api.discogs.com/labels/258"
+}
+],
+"artists": [
+{
+"name": "Davina",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 6170,
+"resource_url": "https://api.discogs.com/artists/6170"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"House"
+]
+}
+},
+{
+"id": 10856148,
+"instance_id": 461969986,
+"date_added": "2020-04-24T13:22:06-07:00",
+"rating": 0,
+"basic_information": {
+"id": 10856148,
+"master_id": 151037,
+"master_url": "https://api.discogs.com/masters/151037",
+"resource_url": "https://api.discogs.com/releases/10856148",
+"thumb": "",
+"cover_image": "",
+"title": "Stand Up (Pangaea's Mix)",
+"year": 2017,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"45 RPM",
+"Single Sided"
+]
+}
+],
+"labels": [
+{
+"name": "Salsoul Records",
+"catno": "SALSBMG08",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 751,
+"resource_url": "https://api.discogs.com/labels/751"
+}
+],
+"artists": [
+{
+"name": "Loleatta Holloway",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 17413,
+"resource_url": "https://api.discogs.com/artists/17413"
+}
+],
+"genres": [
+"Electronic",
+"Funk / Soul"
+],
+"styles": [
+"Broken Beat",
+"Disco"
+]
+}
+},
+{
+"id": 14637600,
+"instance_id": 461969704,
+"date_added": "2020-04-24T13:21:43-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14637600,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/14637600",
+"thumb": "",
+"cover_image": "",
+"title": "Dark Leader 006 ",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\""
+]
+}
+],
+"labels": [
+{
+"name": "Dark Leader",
+"catno": "DL006",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1058243,
+"resource_url": "https://api.discogs.com/labels/1058243"
+}
+],
+"artists": [
+{
+"name": "Etbonz",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 2352382,
+"resource_url": "https://api.discogs.com/artists/2352382"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Acid",
+"Techno"
+]
+}
+},
+{
+"id": 14109897,
+"instance_id": 461969634,
+"date_added": "2020-04-24T13:21:29-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14109897,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/14109897",
+"thumb": "",
+"cover_image": "",
+"title": "Blackbones 6",
+"year": 2019,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\""
+]
+}
+],
+"labels": [
+{
+"name": "Black Bones",
+"catno": "Blackbones006",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1178608,
+"resource_url": "https://api.discogs.com/labels/1178608"
+}
+],
+"artists": [
+{
+"name": "Blackbones (4)",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 5602460,
+"resource_url": "https://api.discogs.com/artists/5602460"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"New Beat",
+"Disco",
+"Italo-Disco"
+]
+}
+},
+{
+"id": 14359951,
+"instance_id": 461969570,
+"date_added": "2020-04-24T13:21:15-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14359951,
+"master_id": 1657247,
+"master_url": "https://api.discogs.com/masters/1657247",
+"resource_url": "https://api.discogs.com/releases/14359951",
+"thumb": "",
+"cover_image": "",
+"title": "The Last Day Of Pompeii - Part I",
+"year": 2019,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM",
+"EP"
+]
+}
+],
+"labels": [
+{
+"name": "Midgar",
+"catno": "MDGEM02.1",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 704714,
+"resource_url": "https://api.discogs.com/labels/704714"
+}
+],
+"artists": [
+{
+"name": "Retina.it",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 47484,
+"resource_url": "https://api.discogs.com/artists/47484"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Downtempo",
+"Experimental"
+]
+}
+},
+{
+"id": 14459483,
+"instance_id": 461969365,
+"date_added": "2020-04-24T13:20:45-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14459483,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/14459483",
+"thumb": "",
+"cover_image": "",
+"title": "Radiant Reality",
+"year": 2019,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\""
+]
+}
+],
+"labels": [
+{
+"name": "Magicwire",
+"catno": "MAGIC018",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 888953,
+"resource_url": "https://api.discogs.com/labels/888953"
+}
+],
+"artists": [
+{
+"name": "Bliss Inc. (2)",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 7540287,
+"resource_url": "https://api.discogs.com/artists/7540287"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"House",
+"Techno",
+"Acid",
+"Trance",
+"Downtempo"
+]
+}
+},
+{
+"id": 14964837,
+"instance_id": 461969296,
+"date_added": "2020-04-24T13:20:32-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14964837,
+"master_id": 1703984,
+"master_url": "https://api.discogs.com/masters/1703984",
+"resource_url": "https://api.discogs.com/releases/14964837",
+"thumb": "",
+"cover_image": "",
+"title": "Midnight Mania",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"LP",
+"Mini-Album",
+"Stereo"
+]
+}
+],
+"labels": [
+{
+"name": "Optimo Music",
+"catno": "OM LP 17",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 140001,
+"resource_url": "https://api.discogs.com/labels/140001"
+}
+],
+"artists": [
+{
+"name": "Tornado Wallace",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 1840339,
+"resource_url": "https://api.discogs.com/artists/1840339"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"House",
+"Leftfield"
+]
+}
+},
+{
+"id": 14664896,
+"instance_id": 445276996,
+"date_added": "2020-03-11T19:57:06-07:00",
+"rating": 0,
+"basic_information": {
+"id": 14664896,
+"master_id": 1694742,
+"master_url": "https://api.discogs.com/masters/1694742",
+"resource_url": "https://api.discogs.com/releases/14664896",
+"thumb": "",
+"cover_image": "",
+"title": "Tumbling Towards A Wall",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"LP",
+"Album",
+"Limited Edition"
+]
+}
+],
+"labels": [
+{
+"name": "Experiences Ltd.",
+"catno": "ulla01",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1752559,
+"resource_url": "https://api.discogs.com/labels/1752559"
+}
+],
+"artists": [
+{
+"name": "Ulla Straus",
+"anv": "Ulla",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 6114747,
+"resource_url": "https://api.discogs.com/artists/6114747"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Ambient"
+]
+}
+},
+{
+"id": 14570605,
+"instance_id": 440085895,
+"date_added": "2020-02-21T19:39:09-08:00",
+"rating": 0,
+"basic_information": {
+"id": 14570605,
+"master_id": 1526384,
+"master_url": "https://api.discogs.com/masters/1526384",
+"resource_url": "https://api.discogs.com/releases/14570605",
+"thumb": "",
+"cover_image": "",
+"title": "Cor Corona",
+"year": 2020,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM",
+"45 RPM",
+"Maxi-Single",
+"Reissue",
+"Remastered"
+]
+}
+],
+"labels": [
+{
+"name": "Spaziale Recordings",
+"catno": "SPZ-004",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1728054,
+"resource_url": "https://api.discogs.com/labels/1728054"
+}
+],
+"artists": [
+{
+"name": "Nyra Bakiga",
+"anv": "Nyrabakiga",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 706133,
+"resource_url": "https://api.discogs.com/artists/706133"
+}
+],
+"genres": [
+"Electronic",
+"Funk / Soul"
+],
+"styles": [
+"Avantgarde",
+"Experimental",
+"Industrial",
+"Afrobeat"
+]
+}
+},
+{
+"id": 2087202,
+"instance_id": 440085834,
+"date_added": "2020-02-21T19:38:41-08:00",
+"rating": 0,
+"basic_information": {
+"id": 2087202,
+"master_id": 234092,
+"master_url": "https://api.discogs.com/masters/234092",
+"resource_url": "https://api.discogs.com/releases/2087202",
+"thumb": "",
+"cover_image": "",
+"title": "Machines For Lovers EP",
+"year": 2010,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\"",
+"White Label",
+"Limited Edition",
+"EP",
+"33 ⅓ RPM"
+]
+}
+],
+"labels": [
+{
+"name": "+ + +",
+"catno": "+ + + 01",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 178593,
+"resource_url": "https://api.discogs.com/labels/178593"
+}
+],
+"artists": [
+{
+"name": "Hieroglyphic Being",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 25370,
+"resource_url": "https://api.discogs.com/artists/25370"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Abstract",
+"Deep House",
+"Experimental",
+"Ambient"
+]
+}
+},
+{
+"id": 12489364,
+"instance_id": 440085723,
+"date_added": "2020-02-21T19:37:43-08:00",
+"rating": 0,
+"basic_information": {
+"id": 12489364,
+"master_id": 0,
+"master_url": null,
+"resource_url": "https://api.discogs.com/releases/12489364",
+"thumb": "",
+"cover_image": "",
+"title": "11",
+"year": 2018,
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"descriptions": [
+"12\""
+]
+}
+],
+"labels": [
+{
+"name": "Whiteloops",
+"catno": "WHITELOOPS11",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 1117841,
+"resource_url": "https://api.discogs.com/labels/1117841"
+}
+],
+"artists": [
+{
+"name": "DiSKOP",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 6933041,
+"resource_url": "https://api.discogs.com/artists/6933041"
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Minimal",
+"Breaks",
+"House",
+"Breakbeat"
+]
+}
+}
+]
+}
