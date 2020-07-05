@@ -39,6 +39,7 @@
 		09F1CBC924B263FF007B676A /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBC824B263FF007B676A /* Artist.swift */; };
 		09F1CBCB24B26447007B676A /* RecordLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBCA24B26447007B676A /* RecordLabel.swift */; };
 		09F1CBCD24B27CC8007B676A /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBCC24B27CC8007B676A /* Pagination.swift */; };
+		09F1CBD024B2843A007B676A /* BrowserDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBCF24B2843A007B676A /* BrowserDataSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		09F1CBC824B263FF007B676A /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		09F1CBCA24B26447007B676A /* RecordLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLabel.swift; sourceTree = "<group>"; };
 		09F1CBCC24B27CC8007B676A /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		09F1CBCF24B2843A007B676A /* BrowserDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserDataSourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		093AE42824B1190B00B126E2 /* DiscogsStreamerTests */ = {
 			isa = PBXGroup;
 			children = (
+				09F1CBCE24B28426007B676A /* DataSource */,
 				093AE48424B24C6F00B126E2 /* Model */,
 				093AE48324B24C6A00B126E2 /* Network */,
 				093AE47724B15A2B00B126E2 /* Fixtures */,
@@ -302,6 +305,14 @@
 				093AE48524B24C9800B126E2 /* ReleaseTests.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		09F1CBCE24B28426007B676A /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				09F1CBCF24B2843A007B676A /* BrowserDataSourceTests.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,6 +476,7 @@
 				093AE44B24B11D8500B126E2 /* FolderTests.swift in Sources */,
 				093AE48624B24C9800B126E2 /* ReleaseTests.swift in Sources */,
 				093AE45524B1208A00B126E2 /* MockDiscogsService.swift in Sources */,
+				09F1CBD024B2843A007B676A /* BrowserDataSourceTests.swift in Sources */,
 				093AE46C24B156F900B126E2 /* Fixtures.swift in Sources */,
 				093AE46824B1480F00B126E2 /* DiscogsClientTests.swift in Sources */,
 				093AE45724B1212400B126E2 /* MockRemoteMethod.swift in Sources */,

@@ -85,13 +85,13 @@ class DiscogsClientTests: XCTestCase {
         XCTAssertEqual(response?.pagination.perPage, 50)
         XCTAssertEqual(response?.pagination.pages, 23)
 
-        XCTAssertEqual(response?.releases.count, 50)
-        XCTAssertEqual(response?.releases.first?.displayName, "E.R.P. / Duplex - Fr-Dpx")
-        XCTAssertEqual(response?.releases.first?.secondaryDisplayName, nil)
+        XCTAssertEqual(response?.items.count, 50)
+        XCTAssertEqual(response?.items.first?.displayName, "E.R.P. / Duplex - Fr-Dpx")
+        XCTAssertEqual(response?.items.first?.secondaryDisplayName, nil)
         
-        XCTAssertEqual(response?.releases[1].displayName, "Minor Science - Second Language")
-        XCTAssertEqual(response?.releases[1].secondaryDisplayName, "Whities (2020)")
+        XCTAssertEqual(response?.items[1].displayName, "Minor Science - Second Language")
+        XCTAssertEqual(response?.items[1].secondaryDisplayName, "Whities (2020)")
 
-        XCTAssertEqual(response?.releases[2].displayName, "Indigo Tracks - Rites And Rituals")
+        XCTAssertEqual(response?.items[2].displayName, "Indigo Tracks - Rites And Rituals")
     }
 }

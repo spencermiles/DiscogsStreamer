@@ -11,8 +11,8 @@ import Foundation
 @testable import DiscogsStreamer
 
 class MockDiscogsService: DiscogsService {
-    private let userFoldersMethod = MockRemoteMethod<UserFoldersRequest, FoldersResponse>()
-    private let userReleasesMethod = MockRemoteMethod<UserReleasesRequest, ReleasesResponse>()
+    let userFoldersMethod = MockRemoteMethod<UserFoldersRequest, FoldersResponse>()
+    let userReleasesMethod = MockRemoteMethod<UserReleasesRequest, ReleasesResponse>()
 
     func userFolders(for request: UserFoldersRequest) -> AnyPublisher<FoldersResponse, Error> {
         userFoldersMethod.publisher(for: request).eraseToAnyPublisher()

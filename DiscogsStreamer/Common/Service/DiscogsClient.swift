@@ -142,7 +142,7 @@ private extension ReleasesResponse {
     init(_ response: RawReleasesResponse) {
         self.init(
             pagination: Pagination(response.pagination),
-            releases: response.releases.compactMap { Release($0) }
+            items: response.releases.compactMap { Release($0) }
         )
     }
 }
