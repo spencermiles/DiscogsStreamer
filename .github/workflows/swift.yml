@@ -26,5 +26,10 @@ jobs:
         scheme: DiscogsStreamer
         destination: platform=iOS Simulator,name=iPhone 11 Pro
         action: test
+    - uses: codecov/codecov-action@v1
+      with:
+        token: ${{secrets.CODECOV_TOKEN}}
+        # file: coverage.lcov
+        fail_ci_if_error: true
     # - name: Start xcodebuild test
     #   run: xcodebuild clean test -project DiscogsStreamer.xcodeproj -scheme DiscogsStreamer -destination "platform=iOS Simulator,name=iPhone 11 Pro"
