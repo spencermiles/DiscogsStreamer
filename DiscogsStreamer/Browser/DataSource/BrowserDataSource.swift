@@ -13,7 +13,7 @@ class BrowserDataSource {
     private let perPage: UInt
     private let service: DiscogsService
     
-    private(set) var data = Data()
+    @Published private(set) var data = Data()
     
     struct Data {
         var items: [Browseable] = []
@@ -60,6 +60,10 @@ class BrowserDataSource {
         state.startLoading(task: task(forPage: state.currentPage + 1))
     }
     
+    func reload() {
+        state.startReloading(task: task(forPage: 1))
+    }
+    
     private func task(forPage page: UInt) -> AnyCancellable {
         // TODO: Replace this with better values
         let request = UserReleasesRequest(username: "spencermiles", folderId: 0)
@@ -75,6 +79,7 @@ class BrowserDataSource {
             let releases = try result.get()
             state.recordSuccess(response: releases)
         } catch {
+            // TODO: Implement failure
 //            state.recordFailure(error: error)
         }
     }
@@ -141,6 +146,10 @@ private extension BrowserDataSource.State {
              .loadingMore(let responses, _):
             self = .loadingMore(responses, task)
         }
+    }
+    
+    mutating func startReloading(task: AnyCancellable) {
+        self = .loading(task)
     }
     
     mutating func recordSuccess(response: BrowseableResponse) {

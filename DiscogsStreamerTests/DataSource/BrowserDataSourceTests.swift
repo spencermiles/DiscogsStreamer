@@ -11,6 +11,14 @@ import XCTest
 
 class BrowserDataSourceTests: XCTestCase {
 
+    let releases = ReleasesResponse.init(
+        pagination: .init(page: 1, pages: 2, perPage: 3, items: 4),
+        items: [
+            Release(id: 1, title: "Coastal Iridescence 1", year: 2020),
+            Release(id: 2, title: "Coastal Iridescence 2", year: 2020),
+            Release(id: 3, title: "Coastal Iridescence 3", year: 2020)
+    ])
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -42,21 +50,14 @@ class BrowserDataSourceTests: XCTestCase {
       
     func testPaginationRequests() throws {
         let service = MockDiscogsService()
-        let dataSource = BrowserDataSource(perPage: 50, service: service)
+        let dataSource = BrowserDataSource(perPage: 3, service: service)
         
         dataSource.loadMore()
         
         XCTAssertEqual(service.userReleasesMethod.pendingRequests.count, 1)
         XCTAssertEqual(service.userReleasesMethod.pendingRequests.first?.page, 1)
 
-        service.userReleasesMethod.succeed(response:
-            .init(
-                pagination: .init(page: 1, pages: 2, perPage: 3, items: 4),
-                items: [
-                    Release(id: 1, title: "Coastal Iridescence 1", year: 2020),
-                    Release(id: 2, title: "Coastal Iridescence 2", year: 2020),
-                    Release(id: 3, title: "Coastal Iridescence 3", year: 2020)
-                ]))
+        service.userReleasesMethod.succeed(response: releases)
         XCTAssertTrue(dataSource.data.isLoading)
         waitForNextLoop()
         
@@ -88,5 +89,29 @@ class BrowserDataSourceTests: XCTestCase {
         // Try loading more, which should be a no-op
         dataSource.loadMore()
         XCTAssertFalse(dataSource.data.isLoading)
+    }
+    
+      func testReload() throws {
+        let service = MockDiscogsService()
+        let dataSource = BrowserDataSource(perPage: 3, service: service)
+        
+        dataSource.loadMore()
+        service.userReleasesMethod.succeed(response: releases)
+        waitForNextLoop()
+        XCTAssertEqual(dataSource.data.items.count, 3)
+
+        // Now reload with empty payload, and ensure nothing is present
+        dataSource.reload()
+        
+        XCTAssertEqual(service.userReleasesMethod.pendingRequests.count, 1)
+        XCTAssertEqual(service.userReleasesMethod.pendingRequests.first?.page, 1)
+        
+        service.userReleasesMethod.succeed(response: .init(
+            pagination: .init(page: 1, pages: 1, perPage: 5, items: 9),
+            items: []))
+        waitForNextLoop()
+        
+        XCTAssertEqual(dataSource.data.items.count, 0)
+
     }
 }
