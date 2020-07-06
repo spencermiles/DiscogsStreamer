@@ -22,6 +22,8 @@ struct UserReleasesRequest {
     var username: String
     var folderId: Int
     var page: UInt = 1
+    var sort: String = "added"
+    var sortOrder: String = "desc"
 }
 
 struct FoldersResponse {

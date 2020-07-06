@@ -71,7 +71,7 @@ class BrowserDataSourceTests: XCTestCase {
         dataSource.loadMore()
         
         XCTAssertEqual(service.userReleasesMethod.pendingRequests.count, 1)
-        XCTAssertEqual(service.userReleasesMethod.pendingRequests.first?.page, 1)
+        XCTAssertEqual(service.userReleasesMethod.pendingRequests.first?.page, 2)
         XCTAssertTrue(dataSource.data.isLoading)
 
         service.userReleasesMethod.succeed(response:

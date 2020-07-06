@@ -74,6 +74,8 @@ class BrowserViewController: BaseViewController {
                     name: $0.displayName,
                     model: .init(title: $0.displayName, subtitle: nil))
             }
+            
+            self.loadingCell = data.canLoadMore || data.isLoading || data.isReloading
         }
     }
     
@@ -119,9 +121,7 @@ class BrowserViewController: BaseViewController {
         view.estimatedRowHeight = 60
 
         view.register(BrowseableItemTableViewCell.self, forCellReuseIdentifier: BrowseableItemTableViewCell.reuseIdentifier)
-//        view.register(ItemListErrorCell.self)
-//        view.register(ItemListLoadingCell.self)
-//        view.register(ItemListItemCell.self)
+        view.register(BrowseableLoadingTableViewCell.self, forCellReuseIdentifier: BrowseableLoadingTableViewCell.reuseIdentifier)
 
         self.view = view
     }
@@ -168,7 +168,16 @@ class BrowserViewController: BaseViewController {
             return nil
             
         case .loading:
-            return nil
+            guard model.loadingCell else {
+                return nil
+            }
+            
+            let cell: BrowseableLoadingTableViewCell = tableView.dequeueReusableCell(
+                withIdentifier: BrowseableLoadingTableViewCell.reuseIdentifier,
+                for: indexPath)
+                as! BrowseableLoadingTableViewCell
+            
+            return cell
         }
     }
     
@@ -179,7 +188,7 @@ class BrowserViewController: BaseViewController {
             cell.model = model.cells[indexPath.row].model
 
         case .loading:
-            break
+            let cell = tableView.cellForRow(at: indexPath) as! BrowseableLoadingTableViewCell
 
         case .error:
             break
@@ -201,6 +210,8 @@ class BrowserViewController: BaseViewController {
 
         snapshot.appendSections([.items])
         let items = model.cells.map({ Row.item($0.id) })
+        let set: Set<Int> = Set(model.cells.map({ $0.id }))
+        
         snapshot.appendItems(items, toSection: .items)
 
         if model.loadingCell {
@@ -216,7 +227,7 @@ class BrowserViewController: BaseViewController {
         tableViewDataSource.apply(snapshot, animatingDifferences: animated) {
             // After applying changes, there might still be a loading cell visible.
             // If there is, we need to request more items.
-//            if self.tableView.visibleCells.contains(where: { $0 is ItemListLoadingCell }) {
+//            if self.tableView.visibleCells.contains(where: { $0 is BrowseableLoadingTableViewCell }) {
 //                self.requestItems()
 //            }
             
@@ -238,9 +249,9 @@ class BrowserViewController: BaseViewController {
 
 extension BrowserViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        if cell is ItemListLoadingCell {
-//            requestItems()
-//        }
+        if cell is BrowseableLoadingTableViewCell {
+            requestItems()
+        }
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

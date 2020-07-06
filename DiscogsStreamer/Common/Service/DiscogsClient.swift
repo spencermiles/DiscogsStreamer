@@ -50,7 +50,7 @@ extension DiscogsClient: DiscogsService {
     }
     
     func userReleases(for request: UserReleasesRequest) -> AnyPublisher<ReleasesResponse, Error> {
-        let url = URL(string: "users/\(request.username)/collection/folders/\(request.folderId)/releases", relativeTo: baseURL)!
+        let url = URL(string: "users/\(request.username)/collection/folders/\(request.folderId)/releases?page=\(request.page)&sort=\(request.sort)&sort_order=\(request.sortOrder)", relativeTo: baseURL)!
         
         return session.dataTaskPublisher(for: url)
             .httpSuccess()
@@ -135,6 +135,7 @@ private struct RawRelease: Decodable {
     
     
     let id: Int
+    let instanceId: Int
     let basicInformation: RawReleaseBasicInformation
 }
 
@@ -150,7 +151,7 @@ private extension ReleasesResponse {
 private extension Release {
     init?(_ release: RawRelease) {
         self.init(
-            id: release.id,
+            id: release.instanceId,
             resourceURL: URL(string: release.basicInformation.resourceUrl),
             artists: release.basicInformation.artists.compactMap({ Artist($0) }),
             recordLabels: release.basicInformation.labels.compactMap({ RecordLabel($0) }),

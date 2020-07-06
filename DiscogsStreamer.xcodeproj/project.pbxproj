@@ -44,6 +44,7 @@
 		09F1CBD624B2A2C6007B676A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBD524B2A2C6007B676A /* UIView+Extensions.swift */; };
 		09F1CBD824B2A557007B676A /* NSDiffableDataDataSourceSnapshot+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBD724B2A556007B676A /* NSDiffableDataDataSourceSnapshot+Extensions.swift */; };
 		09F1CBDB24B2AED2007B676A /* BrowserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBDA24B2AED2007B676A /* BrowserViewModelTests.swift */; };
+		09F1CBDD24B2B764007B676A /* BrowseableLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBDC24B2B764007B676A /* BrowseableLoadingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		09F1CBD524B2A2C6007B676A /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		09F1CBD724B2A556007B676A /* NSDiffableDataDataSourceSnapshot+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDiffableDataDataSourceSnapshot+Extensions.swift"; sourceTree = "<group>"; };
 		09F1CBDA24B2AED2007B676A /* BrowserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewModelTests.swift; sourceTree = "<group>"; };
+		09F1CBDC24B2B764007B676A /* BrowseableLoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseableLoadingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +281,7 @@
 			children = (
 				093AE45C24B12EE900B126E2 /* BrowserViewController.swift */,
 				09F1CBD324B2A17C007B676A /* BrowseableItemTableViewCell.swift */,
+				09F1CBDC24B2B764007B676A /* BrowseableLoadingTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				093AE41324B1190900B126E2 /* AppDelegate.swift in Sources */,
 				093AE46324B1415400B126E2 /* Environment.swift in Sources */,
 				09F1CBCD24B27CC8007B676A /* Pagination.swift in Sources */,
+				09F1CBDD24B2B764007B676A /* BrowseableLoadingTableViewCell.swift in Sources */,
 				09F1CBD424B2A17C007B676A /* BrowseableItemTableViewCell.swift in Sources */,
 				093AE48224B23B7500B126E2 /* Browseable.swift in Sources */,
 				093AE46624B1476400B126E2 /* URLSessionDataTaskPublisher+Extensions.swift in Sources */,

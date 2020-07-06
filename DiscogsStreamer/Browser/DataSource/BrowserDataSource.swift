@@ -57,7 +57,7 @@ class BrowserDataSource {
             return
         }
         
-        state.startLoading(task: task(forPage: state.currentPage + 1))
+        state.startLoading(task: task(forPage: state.nextPage))
     }
     
     func reload() {
@@ -66,7 +66,7 @@ class BrowserDataSource {
     
     private func task(forPage page: UInt) -> AnyCancellable {
         // TODO: Replace this with better values
-        let request = UserReleasesRequest(username: "spencermiles", folderId: 0)
+        let request = UserReleasesRequest(username: "spencermiles", folderId: 0, page: page)
         
         return service.userReleases(for: request)
             .receive(on: DispatchQueue.main)
@@ -135,6 +135,20 @@ private extension BrowserDataSource.State {
     
     var didFail: Bool {
         return false
+    }
+    
+    var nextPage: UInt {
+        switch self {
+        case .loaded(let responses),
+             .loadingMore(let responses, _):
+            guard let page = responses.last?.pagination.page else {
+                return 1
+            }
+            return page + 1
+            
+        case .ready, .loading:
+            return 1
+        }
     }
     
     mutating func startLoading(task: AnyCancellable) {
