@@ -15,32 +15,33 @@ protocol _BrowserViewControllerDelegate: AnyObject {
 }
 
 protocol BrowseableCell {
-    var id: Int { get }
-    var name: String { get }
+    typealias ID = Int
+    
+    var id: ID { get }
     var model: BrowseableItemTableViewCell.Model { get }
 }
 
-private enum BrowseableItem {
-    typealias ID = Int
-    
-    case release(Release)
-}
-
-extension BrowseableItem {
-    var displayName: String {
-        switch self {
-        case .release(let release):
-            return release.displayName
-        }
-    }
-    
-    var id: BrowseableItem.ID {
-        switch self {
-        case .release(let release):
-            return release.id
-        }
-    }
-}
+//private enum BrowseableItem {
+//    typealias ID = Int
+//
+//    case release(Release)
+//}
+//
+//extension BrowseableItem {
+//    var displayName: String {
+//        switch self {
+//        case .release(let release):
+//            return release.displayName
+//        }
+//    }
+//
+//    var id: BrowseableItem.ID {
+//        switch self {
+//        case .release(let release):
+//            return release.id
+//        }
+//    }
+//}
 
 class BrowserViewController: BaseViewController {
     typealias Delegate = _BrowserViewControllerDelegate
@@ -53,13 +54,11 @@ class BrowserViewController: BaseViewController {
         
         struct BrowseableFolderCell: BrowseableCell {
             var id: Int
-            var name: String
             var model: BrowseableItemTableViewCell.Model
         }
         
         struct BrowseableReleaseCell: BrowseableCell {
             var id: Int
-            var name: String
             var model: BrowseableItemTableViewCell.Model
         }
 
@@ -71,8 +70,7 @@ class BrowserViewController: BaseViewController {
                 // TODO: Extend this to support Folder types
                 BrowseableReleaseCell(
                     id: $0.id,
-                    name: $0.displayName,
-                    model: .init(title: $0.displayName, subtitle: nil))
+                    model: .init(title: $0.displayName, subtitle: $0.secondaryDisplayName))
             }
             
             self.loadingCell = data.canLoadMore || data.isLoading || data.isReloading
@@ -86,7 +84,7 @@ class BrowserViewController: BaseViewController {
     }
 
     private enum Row: Hashable {
-        case item(BrowseableItem.ID)
+        case item(BrowseableCell.ID)
         case loading
         case error
     }
@@ -210,8 +208,6 @@ class BrowserViewController: BaseViewController {
 
         snapshot.appendSections([.items])
         let items = model.cells.map({ Row.item($0.id) })
-        let set: Set<Int> = Set(model.cells.map({ $0.id }))
-        
         snapshot.appendItems(items, toSection: .items)
 
         if model.loadingCell {

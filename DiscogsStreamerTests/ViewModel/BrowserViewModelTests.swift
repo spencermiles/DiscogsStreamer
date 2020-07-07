@@ -12,11 +12,12 @@ import XCTest
 class BrowserViewModelTests: XCTestCase {
     private let releases: [Release] = {
         let artist = Artist(id: 1, name: "Spencer Miles")
-
+        let recordLabel = RecordLabel(id: 1, name: "Invisible Boundary")
+        
         return [
-            Release(id: 1, resourceURL: nil, artists: [artist], recordLabels: [], title: "Coastal Iridescence 1", year: 2020),
-            Release(id: 2, resourceURL: nil, artists: [artist], recordLabels: [], title: "Coastal Iridescence 2", year: 2020),
-            Release(id: 3, resourceURL: nil, artists: [artist], recordLabels: [], title: "Coastal Iridescence 3", year: 2020)
+            Release(id: 1, resourceURL: nil, artists: [artist], recordLabels: [recordLabel], title: "Coastal Iridescence 1", year: 2020),
+            Release(id: 2, resourceURL: nil, artists: [artist], recordLabels: [recordLabel], title: "Coastal Iridescence 2", year: 2020),
+            Release(id: 3, resourceURL: nil, artists: [artist], recordLabels: [recordLabel], title: "Coastal Iridescence 3", year: 2020)
         ]
     }()
     
@@ -37,12 +38,11 @@ class BrowserViewModelTests: XCTestCase {
         XCTAssertEqual(model.cells.count, 3)
         XCTAssertEqual(model.cells.map({ $0.id }), [1, 2, 3])
         XCTAssertEqual(
-            model.cells.map({ $0.name }),
+            model.cells.map({ $0.model.title }),
             ["Spencer Miles - Coastal Iridescence 1",
              "Spencer Miles - Coastal Iridescence 2",
              "Spencer Miles - Coastal Iridescence 3"])
-    }
-    
-    // TODO: Implement tests for failure and reloading states
+        XCTAssertEqual(model.cells.first?.model.subtitle, "Invisible Boundary (2020)")
+    }    
 }
 

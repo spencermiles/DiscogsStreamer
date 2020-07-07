@@ -24,15 +24,22 @@ class BrowseableItemTableViewCell: BaseTableViewCell {
         }
     }
     
-    private let title: UILabel = UILabel()
+    let title = UILabel()
+    let subtitle = UILabel()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         applyModel()
     }
     
+    override func constructView() {
+        title.font = UIFont.preferredFont(forTextStyle: .body)
+        subtitle.font = UIFont.preferredFont(forTextStyle: .caption2)
+    }
+    
     override func constructSubviewHierarchy() {
         addAutoLayoutSubview(title)
+        addAutoLayoutSubview(subtitle)
     }
 
     override func constructSubviewLayoutConstraints() {
@@ -41,12 +48,16 @@ class BrowseableItemTableViewCell: BaseTableViewCell {
         NSLayoutConstraint.activate([
             title.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
             title.rightAnchor.constraint(equalTo: layoutMarginsGuide.rightAnchor),
-            title.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor),
-            title.leftAnchor.constraint(equalTo: layoutMarginsGuide.leftAnchor)
+            title.leftAnchor.constraint(equalTo: layoutMarginsGuide.leftAnchor),
+
+            subtitle.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 6),
+            subtitle.leftAnchor.constraint(equalTo: title.leftAnchor),
+            subtitle.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor)
         ])
     }
     
     private func applyModel() {
         self.title.text = model.title
+        self.subtitle.text = model.subtitle
     }
 }
