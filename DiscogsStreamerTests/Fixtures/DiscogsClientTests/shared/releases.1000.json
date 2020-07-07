@@ -1,0 +1,200 @@
+{
+"id": 13864934,
+"status": "Accepted",
+"year": 2019,
+"resource_url": "https://api.discogs.com/releases/13864934",
+"uri": "https://www.discogs.com/ERP-Duplex-Fr-Dpx-/release/13864934",
+"artists": [
+{
+"name": "E.R.P.",
+"anv": "",
+"join": "/",
+"role": "",
+"tracks": "",
+"id": 65705,
+"resource_url": "https://api.discogs.com/artists/65705"
+},
+{
+"name": "Duplex",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 2565,
+"resource_url": "https://api.discogs.com/artists/2565"
+}
+],
+"artists_sort": "E.R.P. / Duplex",
+"labels": [
+{
+"name": "Frustrated Funk",
+"catno": "FR-DPX",
+"entity_type": "1",
+"entity_type_name": "Label",
+"id": 9239,
+"resource_url": "https://api.discogs.com/labels/9239"
+}
+],
+"series": [],
+"companies": [],
+"formats": [
+{
+"name": "Vinyl",
+"qty": "1",
+"text": "Yellow, Transparent",
+"descriptions": [
+"12\"",
+"33 ⅓ RPM"
+]
+}
+],
+"data_quality": "Needs Vote",
+"community": {
+"have": 82,
+"want": 96,
+"rating": {
+"count": 16,
+"average": 4.5
+},
+"submitter": {
+"username": "suburbantrash",
+"resource_url": "https://api.discogs.com/users/suburbantrash"
+},
+"contributors": [
+{
+"username": "suburbantrash",
+"resource_url": "https://api.discogs.com/users/suburbantrash"
+},
+{
+"username": "hana-bi",
+"resource_url": "https://api.discogs.com/users/hana-bi"
+},
+{
+"username": "mayday",
+"resource_url": "https://api.discogs.com/users/mayday"
+},
+{
+"username": "CarlJ",
+"resource_url": "https://api.discogs.com/users/CarlJ"
+}
+],
+"data_quality": "Needs Vote",
+"status": "Accepted"
+},
+"format_quantity": 1,
+"date_added": "2019-07-11T08:20:02-07:00",
+"date_changed": "2020-01-30T09:54:36-08:00",
+"num_for_sale": 16,
+"lowest_price": 11.12,
+"master_id": 1549987,
+"master_url": "https://api.discogs.com/masters/1549987",
+"title": "Fr-Dpx  ",
+"country": "Netherlands",
+"released": "2019-07-08",
+"released_formatted": "08 Jul 2019",
+"identifiers": [
+{
+"type": "Matrix / Runout",
+"value": "PURE TEXAN BANDPASS MADNESS!! -PARENTAL ADVISORY FRUSTRATED FUNK- \"I DON'T KNOW WHAT'S WORSE: DROWING BENEATH THE WAVES OR DYING OF THIRST...\" FR - DPX A ERP - ZRX",
+"description": "Etched Side A"
+},
+{
+"type": "Matrix / Runout",
+"value": "26561 1A",
+"description": "Stamped Side A"
+},
+{
+"type": "Matrix / Runout",
+"value": "\"SEARCHING FOR LOOPHOLES IN MY BRUISED SOUL...\" \"LAMANCHANEGRA OUT!.. FR - DPX - B DUPLEX - MOLECULAR (OVATOW RECLOCK)",
+"description": "Etched Side A"
+},
+{
+"type": "Matrix / Runout",
+"value": "26561 1B",
+"description": "Stamped Side B"
+}
+],
+"videos": [
+{
+"uri": "https://www.youtube.com/watch?v=-PqHIbWm694",
+"title": "E.R.P. - ZRX [FR-DPX]",
+"description": "Buy here: https://clone.nl/item54668.html\n\nhttps://hardwax.com/80748/erp-duplex/zrx/\n\nhttps://frustratedfunk.bandcamp.com/album/fr-dpx\n\nLabel: Frustrated Funk\nRelease date: 14 May 2019 \n\nTracklist:\n\nE.R.P. - ZRX\nDuplex - Molecular (Ovatow Reclock)\n\nTexan ",
+"duration": 326,
+"embed": true
+},
+{
+"uri": "https://www.youtube.com/watch?v=vom3wPqeoS8",
+"title": "Duplex - Molecular (Ovatow Reclock) [FR-DPX]",
+"description": "Buy here: https://clone.nl/item54668.html\n\nhttps://hardwax.com/80748/erp-duplex/zrx/\n\nhttps://frustratedfunk.bandcamp.com/album/fr-dpx\n\nLabel: Frustrated Funk\nRelease date: 14 May 2019 \n\nTracklist:\n\nE.R.P. - ZRX\nDuplex - Molecular (Ovatow Reclock)\n\nTexan ",
+"duration": 501,
+"embed": true
+}
+],
+"genres": [
+"Electronic"
+],
+"styles": [
+"Electro",
+"Breakbeat"
+],
+"tracklist": [
+{
+"position": "A",
+"type_": "track",
+"artists": [
+{
+"name": "E.R.P.",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 65705,
+"resource_url": "https://api.discogs.com/artists/65705"
+}
+],
+"title": "Zrx ",
+"duration": ""
+},
+{
+"position": "B",
+"type_": "track",
+"artists": [
+{
+"name": "Duplex",
+"anv": "",
+"join": "",
+"role": "",
+"tracks": "",
+"id": 2565,
+"resource_url": "https://api.discogs.com/artists/2565"
+}
+],
+"title": "Molecular  (Ovatow Reclock)",
+"extraartists": [
+{
+"name": "Ovatow",
+"anv": "",
+"join": "",
+"role": "Remix",
+"tracks": "",
+"id": 958899,
+"resource_url": "https://api.discogs.com/artists/958899"
+}
+],
+"duration": ""
+}
+],
+"extraartists": [],
+"images": [
+{
+"type": "primary",
+"uri": "",
+"resource_url": "",
+"uri150": "",
+"width": 600,
+"height": 600
+}
+],
+"thumb": "",
+"estimated_weight": 230
+}

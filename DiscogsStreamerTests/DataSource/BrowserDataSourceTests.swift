@@ -11,7 +11,7 @@ import XCTest
 
 class BrowserDataSourceTests: XCTestCase {
 
-    let releases = ReleasesResponse.init(
+    let releases = CollectionReleasesResponse.init(
         pagination: .init(page: 1, pages: 2, perPage: 3, items: 4),
         items: [
             Release(id: 1, title: "Coastal Iridescence 1", year: 2020),

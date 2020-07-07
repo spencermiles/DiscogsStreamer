@@ -46,6 +46,7 @@
 		09F1CBDB24B2AED2007B676A /* BrowserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBDA24B2AED2007B676A /* BrowserViewModelTests.swift */; };
 		09F1CBDD24B2B764007B676A /* BrowseableLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBDC24B2B764007B676A /* BrowseableLoadingTableViewCell.swift */; };
 		09F1CBE024B40132007B676A /* BrowseableItemTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBDF24B40132007B676A /* BrowseableItemTableViewCellTests.swift */; };
+		09F1CBE324B40278007B676A /* ReleaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1CBE224B40278007B676A /* ReleaseDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		09F1CBDA24B2AED2007B676A /* BrowserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewModelTests.swift; sourceTree = "<group>"; };
 		09F1CBDC24B2B764007B676A /* BrowseableLoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseableLoadingTableViewCell.swift; sourceTree = "<group>"; };
 		09F1CBDF24B40132007B676A /* BrowseableItemTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseableItemTableViewCellTests.swift; sourceTree = "<group>"; };
+		09F1CBE224B40278007B676A /* ReleaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,9 @@
 			children = (
 				093AE44224B11A0500B126E2 /* Browser */,
 				093AE44524B11A3800B126E2 /* Common */,
+				093AE44C24B11EA900B126E2 /* Coordinator */,
+				093AE44624B11C1200B126E2 /* Model */,
+				09F1CBE124B40219007B676A /* Release */,
 				093AE41224B1190900B126E2 /* AppDelegate.swift */,
 				093AE41424B1190900B126E2 /* SceneDelegate.swift */,
 				093AE41824B1190B00B126E2 /* Assets.xcassets */,
@@ -209,10 +214,10 @@
 		093AE44224B11A0500B126E2 /* Browser */ = {
 			isa = PBXGroup;
 			children = (
-				093AE44624B11C1200B126E2 /* Model */,
-				093AE47E24B23AE400B126E2 /* DataSource */,
-				093AE45B24B12EDE00B126E2 /* View */,
-				093AE44C24B11EA900B126E2 /* Coordinator */,
+				093AE47F24B23AF300B126E2 /* BrowserDataSource.swift */,
+				093AE45C24B12EE900B126E2 /* BrowserViewController.swift */,
+				09F1CBD324B2A17C007B676A /* BrowseableItemTableViewCell.swift */,
+				09F1CBDC24B2B764007B676A /* BrowseableLoadingTableViewCell.swift */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -279,16 +284,6 @@
 			path = BaseView;
 			sourceTree = "<group>";
 		};
-		093AE45B24B12EDE00B126E2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				093AE45C24B12EE900B126E2 /* BrowserViewController.swift */,
-				09F1CBD324B2A17C007B676A /* BrowseableItemTableViewCell.swift */,
-				09F1CBDC24B2B764007B676A /* BrowseableLoadingTableViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		093AE46424B1475300B126E2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,14 +293,6 @@
 				093AE46924B1517400B126E2 /* Publisher+Extensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		093AE47E24B23AE400B126E2 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				093AE47F24B23AF300B126E2 /* BrowserDataSource.swift */,
-			);
-			path = DataSource;
 			sourceTree = "<group>";
 		};
 		093AE48324B24C6A00B126E2 /* Network */ = {
@@ -347,6 +334,14 @@
 				09F1CBDF24B40132007B676A /* BrowseableItemTableViewCellTests.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		09F1CBE124B40219007B676A /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				09F1CBE224B40278007B676A /* ReleaseDataSource.swift */,
+			);
+			path = Release;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +482,7 @@
 				093AE45D24B12EE900B126E2 /* BrowserViewController.swift in Sources */,
 				093AE45024B11F9B00B126E2 /* MainCoordinator.swift in Sources */,
 				093AE44E24B11EC300B126E2 /* BrowserCoordinator.swift in Sources */,
+				09F1CBE324B40278007B676A /* ReleaseDataSource.swift in Sources */,
 				093AE44824B11C1C00B126E2 /* Folder.swift in Sources */,
 				093AE48024B23AF300B126E2 /* BrowserDataSource.swift in Sources */,
 				093AE46A24B1517400B126E2 /* Publisher+Extensions.swift in Sources */,

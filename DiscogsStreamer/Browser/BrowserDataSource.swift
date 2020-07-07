@@ -74,7 +74,7 @@ class BrowserDataSource {
             .sink { [weak self] in self?.handleReleases(result: $0) }
     }
     
-    private func handleReleases(result: Result<ReleasesResponse, Error>) {
+    private func handleReleases(result: Result<CollectionReleasesResponse, Error>) {
         do {
             let releases = try result.get()
             state.recordSuccess(response: releases)
@@ -119,17 +119,6 @@ private extension BrowserDataSource.State {
             let page = responses.last?.pagination.page ?? 1
             let pages = responses.last?.pagination.pages ?? 1
             return page < pages
-        }
-    }
-    
-    var currentPage: UInt {
-        switch self {
-        case .loaded(let responses),
-             .loadingMore(let responses, _):
-            return responses.last?.pagination.page ?? 1
-            
-        case .ready, .loading:
-            return 1
         }
     }
     

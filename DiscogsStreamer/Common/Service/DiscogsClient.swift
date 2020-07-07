@@ -49,20 +49,57 @@ extension DiscogsClient: DiscogsService {
             .eraseToAnyPublisher()
     }
     
-    func userReleases(for request: UserReleasesRequest) -> AnyPublisher<ReleasesResponse, Error> {
+    func userReleases(for request: UserReleasesRequest) -> AnyPublisher<CollectionReleasesResponse, Error> {
         let url = URL(string: "users/\(request.username)/collection/folders/\(request.folderId)/releases?page=\(request.page)&sort=\(request.sort)&sort_order=\(request.sortOrder)", relativeTo: baseURL)!
         
         return session.dataTaskPublisher(for: url)
             .httpSuccess()
             .map { $0.0 }
-            .decode(type: RawReleasesResponse.self, decoder: jsonDecoder)
-            .map { ReleasesResponse($0) }
+            .decode(type: RawCollectionReleasesResponse.self, decoder: jsonDecoder)
+            .map { CollectionReleasesResponse($0) }
+            .mapError { $0 as Error }
+            .eraseToAnyPublisher()
+    }
+    
+    func release(for request: ReleaseRequest) -> AnyPublisher<ReleaseResponse, Error> {
+        let url = URL(string: "releases/\(request.releaseId)", relativeTo: baseURL)!
+        
+        return session.dataTaskPublisher(for: url)
+            .httpSuccess()
+            .map { $0.0 }
+            .decode(type: RawRelease.self, decoder: jsonDecoder)
+            .map { ReleaseResponse($0) }
             .mapError { $0 as Error }
             .eraseToAnyPublisher()
     }
 }
 
 // MARK: - Network Models and Model Conversion
+
+// MARK: Responses
+
+private extension FoldersResponse {
+    init(_ response: RawFoldersResponse) {
+        self.init(
+            folders: response.folders.compactMap({ Folder($0) })
+        )
+    }
+}
+
+private extension ReleaseResponse {
+    init(_ rawRelease: RawRelease) {
+        self.init(release: Release(rawRelease))
+    }
+}
+
+private extension CollectionReleasesResponse {
+    init(_ response: RawCollectionReleasesResponse) {
+        self.init(
+            pagination: Pagination(response.pagination),
+            items: response.releases.compactMap { Release($0) }
+        )
+    }
+}
 
 // MARK: Folders
 
@@ -75,14 +112,6 @@ private struct RawFolder: Decodable {
     let id: Int
     let name: String
     let resourceUrl: String
-}
-
-private extension FoldersResponse {
-    init(_ response: RawFoldersResponse) {
-        self.init(
-            folders: response.folders.compactMap({ Folder($0) })
-        )
-    }
 }
 
 private extension Folder {
@@ -114,16 +143,51 @@ private extension Pagination {
     }
 }
 
-// MARK: Releases
-
-private struct RawReleasesResponse: Decodable {
-    let pagination: RawPagination
-    let releases: [RawRelease]
+// MARK: Release
+private struct RawRelease: Decodable {
+    let artists: [RawReleaseArtist]
+    let community: RawCommunity
+    let country: String?
+    let dateAdded: String
+    let labels: [RawReleaseRecordLabel]
+    let id: Int
+    let notes: String?
+    let resourceUrl: String
+    let title: String
+    let tracklist: [RawTrack]
+    let videos: [RawVideo]
+    let year: UInt
 }
 
-private struct RawRelease: Decodable {
+private extension Release {
+    init(_ release: RawRelease) {
+        self.init(
+            id: release.id,
+            resourceURL: URL(string: release.resourceUrl),
+            artists: release.artists.compactMap({ Artist($0) }),
+            community: Community(release.community),
+            country: release.country,
+            dateAdded: ISO8601DateFormatter().date(from: release.dateAdded),
+            notes: release.notes,
+            recordLabels: release.labels.compactMap({ RecordLabel($0) }),
+            title: release.title,
+            tracklist: release.tracklist.compactMap({ Release.Track($0) }),
+            videos: release.videos.compactMap({ Video($0) }),
+            year: release.year)
+    }
+}
+
+
+// MARK: Collection Releases
+
+private struct RawCollectionReleasesResponse: Decodable {
+    let pagination: RawPagination
+    let releases: [RawCollectionRelease]
+}
+
+private struct RawCollectionRelease: Decodable {
     
-    struct RawReleaseBasicInformation: Decodable {
+    struct RawCollectionReleaseBasicInformation: Decodable {
         let artists: [RawReleaseArtist]
         let labels: [RawReleaseRecordLabel]
         let masterId: Int
@@ -133,30 +197,45 @@ private struct RawRelease: Decodable {
         let year: UInt
     }
     
-    
     let id: Int
     let instanceId: Int
-    let basicInformation: RawReleaseBasicInformation
-}
-
-private extension ReleasesResponse {
-    init(_ response: RawReleasesResponse) {
-        self.init(
-            pagination: Pagination(response.pagination),
-            items: response.releases.compactMap { Release($0) }
-        )
-    }
+    let basicInformation: RawCollectionReleaseBasicInformation
 }
 
 private extension Release {
-    init?(_ release: RawRelease) {
+    init?(_ collectionRelease: RawCollectionRelease) {
         self.init(
-            id: release.instanceId,
-            resourceURL: URL(string: release.basicInformation.resourceUrl),
-            artists: release.basicInformation.artists.compactMap({ Artist($0) }),
-            recordLabels: release.basicInformation.labels.compactMap({ RecordLabel($0) }),
-            title: release.basicInformation.title,
-            year: release.basicInformation.year)
+            id: collectionRelease.instanceId,
+            resourceURL: URL(string: collectionRelease.basicInformation.resourceUrl),
+            artists: collectionRelease.basicInformation.artists.compactMap({ Artist($0) }),
+            community: nil,
+            recordLabels: collectionRelease.basicInformation.labels.compactMap({ RecordLabel($0) }),
+            title: collectionRelease.basicInformation.title,
+            year: collectionRelease.basicInformation.year)
+    }
+}
+
+// MARK: Community
+
+struct RawCommunity: Decodable {
+    let have: UInt?
+    let want: UInt?
+    let rating: RawRating
+    
+    struct RawRating: Decodable {
+        let count: UInt?
+        let average: Double
+    }
+}
+
+private extension Release.Community {
+    init?(_ community: RawCommunity) {
+        self.init(
+            have: community.have,
+            want: community.want,
+            rating: Rating(
+                count: community.rating.count,
+                average: community.rating.average))
     }
 }
 
@@ -204,5 +283,43 @@ private extension RecordLabel {
             name: recordLabel.name,
             resourceURL: resourceURL,
             catalogNumber: recordLabel.catno)
+    }
+}
+
+// MARK: Track
+
+struct RawTrack: Decodable {
+    let duration: String
+    let position: String
+    let title: String
+}
+
+private extension Release.Track {
+    init(_ track: RawTrack) {
+        self.init(
+            duration: track.duration,
+            position: track.position,
+            title: track.title.trimmingCharacters(in: .whitespacesAndNewlines))
+    }
+}
+
+// MARK: Video
+
+struct RawVideo: Decodable {
+    let description: String
+    let duration: UInt
+    let embed: Bool
+    let title: String
+    let uri: URL
+}
+
+private extension Release.Video {
+    init(_ video: RawVideo) {
+        self.init(
+            description: video.description,
+            duration: video.duration,
+            embed: video.embed,
+            title: video.title,
+            url: video.uri)
     }
 }

@@ -14,6 +14,7 @@ protocol BrowseableResponse {
     var items: [Browseable] { get }
 }
 
+// MARK: - Requests
 struct UserFoldersRequest {
     var username: String
 }
@@ -26,13 +27,22 @@ struct UserReleasesRequest {
     var sortOrder: String = "desc"
 }
 
+struct ReleaseRequest {
+    var releaseId: Int
+}
+
+// MARK: - Responses
 struct FoldersResponse {
     var folders: [Folder]
 }
 
-struct ReleasesResponse: BrowseableResponse {
+struct CollectionReleasesResponse: BrowseableResponse {
     var pagination: Pagination
     var items: [Browseable]
+}
+
+struct ReleaseResponse {
+    var release: Release
 }
 
 
@@ -40,7 +50,8 @@ protocol DiscogsService {
     typealias ItemsResponse = BrowseableResponse
     
     func userFolders(for request: UserFoldersRequest) -> AnyPublisher<FoldersResponse, Error>
-    func userReleases(for request: UserReleasesRequest) -> AnyPublisher<ReleasesResponse, Error>
+    func userReleases(for request: UserReleasesRequest) -> AnyPublisher<CollectionReleasesResponse, Error>
+    func release(for request: ReleaseRequest) -> AnyPublisher<ReleaseResponse, Error>
 }
 
 

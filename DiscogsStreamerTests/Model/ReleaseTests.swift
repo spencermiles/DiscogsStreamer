@@ -17,6 +17,7 @@ class ReleaseTests: XCTestCase {
             id: 0,
             resourceURL: URL(string: "http://discogs.com/release/1"),
             artists: [Artist(id: 0, name: "Spencer Miles ")],
+            community: Release.Community(have: 5, want: 50, rating: .init(count: 5, average: 4.55)),
             recordLabels: [label],
             title: "Coastal Iridescence",
             year: 2020)
@@ -25,6 +26,9 @@ class ReleaseTests: XCTestCase {
         XCTAssertEqual(release.displayName, "Spencer Miles - Coastal Iridescence")
         XCTAssertEqual(release.artists.count, 1)
         XCTAssertEqual(release.artists.first?.name, "Spencer Miles")
+        XCTAssertEqual(release.community?.have, 5)
+        XCTAssertEqual(release.community?.want, 50)
+        XCTAssertEqual(release.community?.rating.average, 4.55)
         XCTAssertEqual(release.recordLabels.count, 1)
         XCTAssertEqual(release.recordLabels.first?.name, "Invisible Boundary")
         XCTAssertEqual(release.secondaryDisplayName, "Invisible Boundary (2020)")
