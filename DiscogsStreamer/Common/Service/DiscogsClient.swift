@@ -49,14 +49,14 @@ extension DiscogsClient: DiscogsService {
             .eraseToAnyPublisher()
     }
     
-    func userReleases(for request: UserReleasesRequest) -> AnyPublisher<CollectionReleasesResponse, Error> {
+    func userReleases(for request: UserReleasesRequest) -> AnyPublisher<DiscogsService.ReleasesResponse, Error> {
         let url = URL(string: "users/\(request.username)/collection/folders/\(request.folderId)/releases?page=\(request.page)&sort=\(request.sort)&sort_order=\(request.sortOrder)", relativeTo: baseURL)!
         
         return session.dataTaskPublisher(for: url)
             .httpSuccess()
             .map { $0.0 }
             .decode(type: RawCollectionReleasesResponse.self, decoder: jsonDecoder)
-            .map { CollectionReleasesResponse($0) }
+            .map { ReleasesResponse($0) }
             .mapError { $0 as Error }
             .eraseToAnyPublisher()
     }
@@ -78,7 +78,7 @@ extension DiscogsClient: DiscogsService {
 
 // MARK: Responses
 
-private extension FoldersResponse {
+private extension DiscogsService.FoldersResponse {
     init(_ response: RawFoldersResponse) {
         self.init(
             folders: response.folders.compactMap({ Folder($0) })
@@ -86,13 +86,13 @@ private extension FoldersResponse {
     }
 }
 
-private extension ReleaseResponse {
+private extension DiscogsService.ReleaseResponse {
     init(_ rawRelease: RawRelease) {
         self.init(release: Release(rawRelease))
     }
 }
 
-private extension CollectionReleasesResponse {
+private extension DiscogsService.ReleasesResponse {
     init(_ response: RawCollectionReleasesResponse) {
         self.init(
             pagination: Pagination(response.pagination),

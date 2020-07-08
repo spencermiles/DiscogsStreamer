@@ -18,10 +18,10 @@ class DiscogsClientTests: XCTestCase {
     func testUserFolders() throws {
         let client = DiscogsClient(baseURL: URL(fixturesFor: self, function: "shared"), session: .fixtures)
         let done = expectation(description: "done")
-        var result: Result<FoldersResponse, Error>?
+        var result: Result<DiscogsService.FoldersResponse, Error>?
             
         client
-            .userFolders(for: UserFoldersRequest(username: "test"))
+            .userFolders(for: DiscogsService.UserFoldersRequest(username: "test"))
             .resultify()
             .sink {
                 result = $0
@@ -39,10 +39,10 @@ class DiscogsClientTests: XCTestCase {
     func testUserFoldersUndecodableData() throws {
         let client = DiscogsClient(baseURL: URL(fixturesFor: self, function: "shared"), session: .fixtures)
         let done = expectation(description: "done")
-        var result: Result<FoldersResponse, Error>?
+        var result: Result<DiscogsService.FoldersResponse, Error>?
             
         client
-            .userFolders(for: UserFoldersRequest(username: "nodata"))
+            .userFolders(for: DiscogsService.UserFoldersRequest(username: "nodata"))
             .resultify()
             .sink {
                 result = $0
@@ -65,10 +65,10 @@ class DiscogsClientTests: XCTestCase {
     func testUserReleases() throws {
         let client = DiscogsClient(baseURL: URL(fixturesFor: self, function: "shared"), session: .fixtures)
         let done = expectation(description: "done")
-        var result: Result<CollectionReleasesResponse, Error>?
+        var result: Result<DiscogsService.ReleasesResponse, Error>?
             
         client
-            .userReleases(for: UserReleasesRequest(username: "test", folderId: 0))
+            .userReleases(for: DiscogsService.UserReleasesRequest(username: "test", folderId: 0))
             .resultify()
             .sink {
                 result = $0
@@ -99,7 +99,7 @@ class DiscogsClientTests: XCTestCase {
     func testRelease() throws {
         let client = DiscogsClient(baseURL: URL(fixturesFor: self, function: "shared"), session: .fixtures)
         let done = expectation(description: "done")
-        var result: Result<ReleaseResponse, Error>?
+        var result: Result<DiscogsService.ReleaseResponse, Error>?
         
         client
             .release(for: .init(releaseId: 1000))

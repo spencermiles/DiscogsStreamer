@@ -12,14 +12,14 @@ import Foundation
 
 class MockDiscogsService: DiscogsService {
     let userFoldersMethod = MockRemoteMethod<UserFoldersRequest, FoldersResponse>()
-    let userReleasesMethod = MockRemoteMethod<UserReleasesRequest, CollectionReleasesResponse>()
+    let userReleasesMethod = MockRemoteMethod<UserReleasesRequest, DiscogsService.ReleasesResponse>()
     let releaseMethod = MockRemoteMethod<ReleaseRequest, ReleaseResponse>()
 
     func userFolders(for request: UserFoldersRequest) -> AnyPublisher<FoldersResponse, Error> {
         userFoldersMethod.publisher(for: request).eraseToAnyPublisher()
     }
     
-    func userReleases(for request: UserReleasesRequest) -> AnyPublisher<CollectionReleasesResponse, Error> {
+    func userReleases(for request: UserReleasesRequest) -> AnyPublisher<DiscogsService.ReleasesResponse, Error> {
         userReleasesMethod.publisher(for: request).eraseToAnyPublisher()
     }
     

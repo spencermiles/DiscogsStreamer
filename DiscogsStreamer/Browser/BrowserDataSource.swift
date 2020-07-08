@@ -26,8 +26,8 @@ class BrowserDataSource {
     fileprivate enum State {
         case ready
         case loading(AnyCancellable)
-        case loaded([DiscogsService.ItemsResponse])
-        case loadingMore([DiscogsService.ItemsResponse], AnyCancellable)
+        case loaded([DiscogsService.ReleasesResponse])
+        case loadingMore([DiscogsService.ReleasesResponse], AnyCancellable)
     }
     
     private var state: State = .ready {
@@ -66,7 +66,7 @@ class BrowserDataSource {
     
     private func task(forPage page: UInt) -> AnyCancellable {
         // TODO: Replace this with better values
-        let request = UserReleasesRequest(username: "spencermiles", folderId: 0, page: page)
+        let request = DiscogsService.UserReleasesRequest(username: "spencermiles", folderId: 0, page: page)
         
         return service.userReleases(for: request)
             .receive(on: DispatchQueue.main)
@@ -74,7 +74,7 @@ class BrowserDataSource {
             .sink { [weak self] in self?.handleReleases(result: $0) }
     }
     
-    private func handleReleases(result: Result<CollectionReleasesResponse, Error>) {
+    private func handleReleases(result: Result<DiscogsService.ReleasesResponse, Error>) {
         do {
             let releases = try result.get()
             state.recordSuccess(response: releases)
@@ -86,7 +86,7 @@ class BrowserDataSource {
 }
 
 private extension BrowserDataSource.State {
-    var responses: [DiscogsService.ItemsResponse] {
+    var responses: [DiscogsService.ReleasesResponse] {
         switch self {
         case .loaded(let responses),
              .loadingMore(let responses, _):
@@ -155,7 +155,7 @@ private extension BrowserDataSource.State {
         self = .loading(task)
     }
     
-    mutating func recordSuccess(response: BrowseableResponse) {
+    mutating func recordSuccess(response: DiscogsService.ReleasesResponse) {
         switch self {
         case .ready,
              .loading:

@@ -14,43 +14,49 @@ protocol BrowseableResponse {
     var items: [Browseable] { get }
 }
 
-// MARK: - Requests
-struct UserFoldersRequest {
-    var username: String
-}
+struct _DiscogsService {
+    // MARK: - Requests
+    struct UserFoldersRequest {
+        var username: String
+    }
 
-struct UserReleasesRequest {
-    var username: String
-    var folderId: Int
-    var page: UInt = 1
-    var sort: String = "added"
-    var sortOrder: String = "desc"
-}
+    struct UserReleasesRequest {
+        var username: String
+        var folderId: Int
+        var page: UInt = 1
+        var sort: String = "added"
+        var sortOrder: String = "desc"
+    }
 
-struct ReleaseRequest {
-    var releaseId: Int
-}
+    struct ReleaseRequest {
+        var releaseId: Int
+    }
 
-// MARK: - Responses
-struct FoldersResponse {
-    var folders: [Folder]
-}
+    // MARK: - Responses
+    struct FoldersResponse {
+        var folders: [Folder]
+    }
 
-struct CollectionReleasesResponse: BrowseableResponse {
-    var pagination: Pagination
-    var items: [Browseable]
-}
+    struct CollectionReleasesResponse: BrowseableResponse {
+        var pagination: Pagination
+        var items: [Browseable]
+    }
 
-struct ReleaseResponse {
-    var release: Release
+    struct ReleaseResponse {
+        var release: Release
+    }
 }
-
 
 protocol DiscogsService {
-    typealias ItemsResponse = BrowseableResponse
-    
+    typealias UserFoldersRequest = _DiscogsService.UserFoldersRequest
+    typealias FoldersResponse = _DiscogsService.FoldersResponse
+    typealias UserReleasesRequest = _DiscogsService.UserReleasesRequest
+    typealias ReleasesResponse = _DiscogsService.CollectionReleasesResponse
+    typealias ReleaseRequest = _DiscogsService.ReleaseRequest
+    typealias ReleaseResponse = _DiscogsService.ReleaseResponse
+
     func userFolders(for request: UserFoldersRequest) -> AnyPublisher<FoldersResponse, Error>
-    func userReleases(for request: UserReleasesRequest) -> AnyPublisher<CollectionReleasesResponse, Error>
+    func userReleases(for request: UserReleasesRequest) -> AnyPublisher<ReleasesResponse, Error>
     func release(for request: ReleaseRequest) -> AnyPublisher<ReleaseResponse, Error>
 }
 
